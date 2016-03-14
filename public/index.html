@@ -142,6 +142,62 @@
 <div class="content">
   
     
+      <article>
+  <header>
+    <h2><a href="http://myhw.ru/post/emgo/">EmGo - Go для микроконтроллеров</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>14 Mar 2016, 11:25</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/go">Go</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/stm32">STM32</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/arm">ARM</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/mcu">MCU</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/embedded">Embedded</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  EmGo EmGo - язык для программирования микроконтроллеров с Go-синтаксисом. Установка Для установки нам потребуется Go версии 1.6+ Получаем код: go get -u -v github.com/ziutek/emgo Устанавливаем компилятор go install -v github.com/ziutek/emgo/egc Прописываем пременные окружения: export EGCC=/usr/local/arm/arm-eabi/bin/arm-none-eabi-gcc export EGLD=/usr/local/arm/arm-eabi/bin/arm-none-eabi-ld export EGAR=/usr/local/arm/arm-eabi/bin/arm-none-eabi-ar export EGROOT=$HOME/go/src/github.com/ziutek/emgo/egroot export EGPATH=$HOME/go/src/github.com/ziutek/emgo/egpath Для сборки бинарного файла egc использует gcc тулчейн. Можно взять например этот GCC ARM Embedded Я обычно распаковываю его как есть в /usr/local/arm и делаю симлинк: cd /usr/local/arm sudo tar xvf ~/Downloads/gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2 sudo ln -s gcc-arm-none-eabi-5_2-2015q4 arm-eabi Так же нужно установить OpenOCD, если он ещё не установлен: sudo apt-get install openocd Или можно использовать тулзу StLink.
+  </p>
+
+  
+  <footer>
+    <a href="http://myhw.ru/post/emgo/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+    
+  
+    
   
     
       <article>

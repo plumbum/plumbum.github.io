@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My hardware</title>
-    <link>http://myhw.ru/</link>
-    <description>Recent content on My hardware</description>
+    <title>Stm32 on My hardware</title>
+    <link>http://myhw.ru/tags/stm32/</link>
+    <description>Recent content in Stm32 on My hardware</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Mon, 14 Mar 2016 11:25:34 +0300</lastBuildDate>
-    <atom:link href="http://myhw.ru/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://myhw.ru/tags/stm32/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>EmGo - Go для микроконтроллеров</title>
@@ -96,67 +96,6 @@ sudo ln -s gcc-arm-none-eabi-5_2-2015q4 arm-eabi
 &lt;h2 id=&#34;что-дальше:fedc21d604e755bf92c1c776b84b5952&#34;&gt;Что дальше?&lt;/h2&gt;
 
 &lt;p&gt;Дальше изучать &lt;a href=&#34;https://github.com/ziutek/emgo/tree/master/egpath/src/stm32/examples&#34;&gt;примеры&lt;/a&gt;, читать &lt;a href=&#34;https://sites.google.com/site/embeddedgo/&#34;&gt;документацию&lt;/a&gt; (пока она весьма условна), писать собственные приложения.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Контактная информация</title>
-      <link>http://myhw.ru/contact/</link>
-      <pubDate>Tue, 16 Feb 2016 13:51:59 +0300</pubDate>
-      
-      <guid>http://myhw.ru/contact/</guid>
-      <description>&lt;p&gt;Пока её нет&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Генератор сайтов Hugo</title>
-      <link>http://myhw.ru/post/hugo/</link>
-      <pubDate>Tue, 16 Feb 2016 13:18:37 +0300</pubDate>
-      
-      <guid>http://myhw.ru/post/hugo/</guid>
-      <description>&lt;p&gt;Hugo - генератор статичных сайтов подбный &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; написанный на &lt;a href=&#34;http://golang.org&#34;&gt;Go&lt;/a&gt;.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://gohugo.io/overview/installing/&#34;&gt;Установка&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;Быстрый старт&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gohugo.io/tutorials/github-pages-blog/&#34;&gt;Размещение на Github Pages&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://themes.gohugo.io/&#34;&gt;Темы оформления&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;Для успешной работы надо ознакомится с &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;markdown форматированием&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Hugo позволяет &lt;a href=&#34;https://gohugo.io/extras/highlighting/&#34;&gt;подсвечивать код&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #f92672&#34;&gt;package&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;main&lt;/span&gt;
-
-&lt;span style=&#34;color: #f92672&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;fmt&amp;quot;&lt;/span&gt;
-
-&lt;span style=&#34;color: #66d9ef&#34;&gt;func&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;main&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color: #f8f8f2&#34;&gt;{&lt;/span&gt;
-    &lt;span style=&#34;color: #a6e22e&#34;&gt;fmt&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color: #a6e22e&#34;&gt;Println&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;Hello world!&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #f8f8f2&#34;&gt;)&lt;/span&gt;
-&lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-
-</description>
-    </item>
-    
-    <item>
-      <title>Первый пост</title>
-      <link>http://myhw.ru/post/first/</link>
-      <pubDate>Tue, 16 Feb 2016 13:08:46 +0300</pubDate>
-      
-      <guid>http://myhw.ru/post/first/</guid>
-      <description>&lt;p&gt;Традиционный первый &lt;del&gt;тост&lt;/del&gt; пост.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>О сайте</title>
-      <link>http://myhw.ru/about/</link>
-      <pubDate>Tue, 16 Feb 2016 12:39:22 +0300</pubDate>
-      
-      <guid>http://myhw.ru/about/</guid>
-      <description>&lt;p&gt;Небольшой сайт с заметками о железе&lt;/p&gt;
 </description>
     </item>
     
