@@ -7,8 +7,97 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 16 Feb 2016 13:18:37 +0300</lastBuildDate>
+    <lastBuildDate>Mon, 14 Mar 2016 11:25:34 +0300</lastBuildDate>
     <atom:link href="http://myhw.ru/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>EmGo - Go для микроконтроллеров</title>
+      <link>http://myhw.ru/post/emgo/</link>
+      <pubDate>Mon, 14 Mar 2016 11:25:34 +0300</pubDate>
+      
+      <guid>http://myhw.ru/post/emgo/</guid>
+      <description>
+
+&lt;h1 id=&#34;emgo:fedc21d604e755bf92c1c776b84b5952&#34;&gt;EmGo&lt;/h1&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/ziutek/emgo&#34;&gt;EmGo&lt;/a&gt; - язык для программирования микроконтроллеров с Go-синтаксисом.&lt;/p&gt;
+
+&lt;h2 id=&#34;установка:fedc21d604e755bf92c1c776b84b5952&#34;&gt;Установка&lt;/h2&gt;
+
+&lt;p&gt;Для установки нам потребуется &lt;a href=&#34;https://golang.org/dl/&#34;&gt;Go версии 1.6+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Получаем код:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;go get -u -v github.com/ziutek/emgo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Устанавливаем компилятор&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;go install -v github.com/ziutek/emgo/egc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Прописываем пременные окружения:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export EGCC=/usr/local/arm/arm-eabi/bin/arm-none-eabi-gcc
+export EGLD=/usr/local/arm/arm-eabi/bin/arm-none-eabi-ld
+export EGAR=/usr/local/arm/arm-eabi/bin/arm-none-eabi-ar
+
+export EGROOT=$HOME/go/src/github.com/ziutek/emgo/egroot
+export EGPATH=$HOME/go/src/github.com/ziutek/emgo/egpath
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Для сборки бинарного файла egc использует gcc тулчейн. Можно взять например этот &lt;a href=&#34;https://launchpad.net/gcc-arm-embedded&#34;&gt;GCC ARM Embedded&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Я обычно распаковываю его как есть в &lt;code&gt;/usr/local/arm&lt;/code&gt; и делаю симлинк:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd /usr/local/arm
+sudo tar xvf ~/Downloads/gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2
+sudo ln -s gcc-arm-none-eabi-5_2-2015q4 arm-eabi
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Так же нужно установить &lt;code&gt;OpenOCD&lt;/code&gt;, если он ещё не установлен:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install openocd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Или можно использовать тулзу &lt;a href=&#34;https://github.com/texane/stlink&#34;&gt;StLink&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;прошивка-тестового-примера:fedc21d604e755bf92c1c776b84b5952&#34;&gt;Прошивка тестового примера&lt;/h2&gt;
+
+&lt;p&gt;После этого, можно отправится к примерам. Из коробки поддерживается демоборда &lt;code&gt;F4 Discovery&lt;/code&gt;, которая у меня была под рукоу.&lt;/p&gt;
+
+&lt;p&gt;Сразу возьмём что нибудь по-нагляднее &lt;del&gt;с блекджеком и&amp;hellip;&lt;/del&gt; т.е. с каналами и горутинами:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd $EGPATH/src/stm32/examples/f4-discovery/channels
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Мне не удалось запустить приложение из RAM, поэтому я отредактировал &lt;code&gt;script.ld&lt;/code&gt; и заменил строчку&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;INCLUDE stm32/loadram
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;на&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;INCLUDE stm32/loadflash
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Теперь собираем наше приложение:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;../build.sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Если копиляция прошла успешно, получили бинарник в elf-е &lt;code&gt;cortexm4f.elf&lt;/code&gt;. Прошиваем его в демоплату через OpenOCD:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;../load-oocd.sh flash
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Бинго! Плата начинает нам весело подмигивать всеми четырьмя светодиодами.&lt;/p&gt;
+
+&lt;h2 id=&#34;что-дальше:fedc21d604e755bf92c1c776b84b5952&#34;&gt;Что дальше?&lt;/h2&gt;
+
+&lt;p&gt;Дальше изучать &lt;a href=&#34;https://github.com/ziutek/emgo/tree/master/egpath/src/stm32/examples&#34;&gt;примеры&lt;/a&gt;, читать &lt;a href=&#34;https://sites.google.com/site/embeddedgo/&#34;&gt;документацию&lt;/a&gt; (пока она весьма условна), писать собственные приложения.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Генератор сайтов Hugo</title>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="EmGo - язык для программирования микроконтроллеров с Go-синтаксисом">
+  <meta name="generator" content="Hugo 0.15-DEV" />
+
+  <title>EmGo - Go для микроконтроллеров &middot; My hardware</title>
+
+  
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://myhw.ru/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://myhw.ru/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://myhw.ru/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  <link rel="alternate" type="application/rss+xml" title="My hardware" href="http://myhw.ru/index.xml" />
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://myhw.ru/img/favicon.ico" type="image/x-icon" />
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://myhw.ru/">My hardware</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://myhw.ru/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://myhw.ru/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://myhw.ru/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://myhw.ru/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="http://myhw.ru/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+    </li>
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/plumbum" target="_blank"><i class="fa fa-github-alt fa-fw"></i>Github</a>
+    </li>
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+  <div class="pure-g">
+  <div class="small-print pure-u-1 pure-u-md-1-1">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print pure-u-1 pure-u-md-1-1">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>EmGo - Go для микроконтроллеров</h1>
+  <h2>EmGo - язык для программирования микроконтроллеров с Go-синтаксисом</h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>14 Mar 2016, 11:25</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/go">Go</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/stm32">STM32</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/arm">ARM</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/mcu">MCU</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/embedded">Embedded</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  
+
+<h1 id="emgo:fedc21d604e755bf92c1c776b84b5952">EmGo</h1>
+
+<p><a href="https://github.com/ziutek/emgo">EmGo</a> - язык для программирования микроконтроллеров с Go-синтаксисом.</p>
+
+<h2 id="установка:fedc21d604e755bf92c1c776b84b5952">Установка</h2>
+
+<p>Для установки нам потребуется <a href="https://golang.org/dl/">Go версии 1.6+</a></p>
+
+<p>Получаем код:</p>
+
+<pre><code>go get -u -v github.com/ziutek/emgo
+</code></pre>
+
+<p>Устанавливаем компилятор</p>
+
+<pre><code>go install -v github.com/ziutek/emgo/egc
+</code></pre>
+
+<p>Прописываем пременные окружения:</p>
+
+<pre><code>export EGCC=/usr/local/arm/arm-eabi/bin/arm-none-eabi-gcc
+export EGLD=/usr/local/arm/arm-eabi/bin/arm-none-eabi-ld
+export EGAR=/usr/local/arm/arm-eabi/bin/arm-none-eabi-ar
+
+export EGROOT=$HOME/go/src/github.com/ziutek/emgo/egroot
+export EGPATH=$HOME/go/src/github.com/ziutek/emgo/egpath
+</code></pre>
+
+<p>Для сборки бинарного файла egc использует gcc тулчейн. Можно взять например этот <a href="https://launchpad.net/gcc-arm-embedded">GCC ARM Embedded</a></p>
+
+<p>Я обычно распаковываю его как есть в <code>/usr/local/arm</code> и делаю симлинк:</p>
+
+<pre><code>cd /usr/local/arm
+sudo tar xvf ~/Downloads/gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2
+sudo ln -s gcc-arm-none-eabi-5_2-2015q4 arm-eabi
+</code></pre>
+
+<p>Так же нужно установить <code>OpenOCD</code>, если он ещё не установлен:</p>
+
+<pre><code>sudo apt-get install openocd
+</code></pre>
+
+<p>Или можно использовать тулзу <a href="https://github.com/texane/stlink">StLink</a>.</p>
+
+<h2 id="прошивка-тестового-примера:fedc21d604e755bf92c1c776b84b5952">Прошивка тестового примера</h2>
+
+<p>После этого, можно отправится к примерам. Из коробки поддерживается демоборда <code>F4 Discovery</code>, которая у меня была под рукоу.</p>
+
+<p>Сразу возьмём что нибудь по-нагляднее <del>с блекджеком и&hellip;</del> т.е. с каналами и горутинами:</p>
+
+<pre><code>cd $EGPATH/src/stm32/examples/f4-discovery/channels
+</code></pre>
+
+<p>Мне не удалось запустить приложение из RAM, поэтому я отредактировал <code>script.ld</code> и заменил строчку</p>
+
+<pre><code>INCLUDE stm32/loadram
+</code></pre>
+
+<p>на</p>
+
+<pre><code>INCLUDE stm32/loadflash
+</code></pre>
+
+<p>Теперь собираем наше приложение:</p>
+
+<pre><code>../build.sh
+</code></pre>
+
+<p>Если копиляция прошла успешно, получили бинарник в elf-е <code>cortexm4f.elf</code>. Прошиваем его в демоплату через OpenOCD:</p>
+
+<pre><code>../load-oocd.sh flash
+</code></pre>
+
+<p>Бинго! Плата начинает нам весело подмигивать всеми четырьмя светодиодами.</p>
+
+<h2 id="что-дальше:fedc21d604e755bf92c1c776b84b5952">Что дальше?</h2>
+
+<p>Дальше изучать <a href="https://github.com/ziutek/emgo/tree/master/egpath/src/stm32/examples">примеры</a>, читать <a href="https://sites.google.com/site/embeddedgo/">документацию</a> (пока она весьма условна), писать собственные приложения.</p>
+
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1 pure-u-md-1-2">
+    
+  </div>
+  <div class="pure-u-1 pure-u-md-1-2">
+    
+    <nav class="next">
+      <a href="http://myhw.ru/contact/">Контактная информация<i class="fa fa-arrow-circle-right fa-fw fa-lg"></i></a>
+    </nav>
+    
+  </div>
+</div>
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'myhw';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://myhw.ru/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-502829-16', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+
