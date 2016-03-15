@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Todo on My hardware</title>
+    <link>http://localhost:1313/tags/todo/</link>
+    <description>Recent content in Todo on My hardware</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <lastBuildDate>Tue, 15 Mar 2016 12:13:06 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/todo/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>ToDo</title>
+      <link>http://localhost:1313/todo/</link>
+      <pubDate>Tue, 15 Mar 2016 12:13:06 +0300</pubDate>
+      
+      <guid>http://localhost:1313/todo/</guid>
+      <description>
+
+&lt;h2 id=&#34;esp-link:5b51c9e8380c18fc2ee8d866662d01d8&#34;&gt;[ ] ESP-Link&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;[x] &lt;a href=&#34;http://localhost:1313/post/esp-link-flash&#34;&gt;Прошивка&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] Компиляция SDK &lt;a href=&#34;https://github.com/pfalcon/esp-open-sdk&#34;&gt;https://github.com/pfalcon/esp-open-sdk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] Компиляция кода &lt;a href=&#34;https://github.com/jeelabs/esp-link&#34;&gt;https://github.com/jeelabs/esp-link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;[ ] Демоплата&lt;/li&gt;
+&lt;li&gt;[ ] Схема-плата переходника&lt;/li&gt;
+&lt;li&gt;[ ] STM32 программатор&lt;/li&gt;
+&lt;li&gt;[ ] Android приложение&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;friendlyarm:5b51c9e8380c18fc2ee8d866662d01d8&#34;&gt;[ ] FriendlyARM&lt;/h2&gt;
+
+&lt;h3 id=&#34;прошивка:5b51c9e8380c18fc2ee8d866662d01d8&#34;&gt;[ ] Прошивка&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Установка U-boot&lt;/li&gt;
+&lt;li&gt;Установка ядра и минимальной системы&lt;/li&gt;
+&lt;li&gt;Конфигурирование сети&lt;/li&gt;
+&lt;li&gt;Telnet&lt;/li&gt;
+&lt;li&gt;SSH/FTP&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;разработка:5b51c9e8380c18fc2ee8d866662d01d8&#34;&gt;[ ] Разработка&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Установка тулчейна&lt;/li&gt;
+&lt;li&gt;Компиляция Hello world&lt;/li&gt;
+&lt;li&gt;Компиляция LUA&lt;/li&gt;
+&lt;li&gt;Установка QTE&lt;/li&gt;
+&lt;li&gt;Экранное приложение&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;nim:5b51c9e8380c18fc2ee8d866662d01d8&#34;&gt;[ ] Nim&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Установка Nim&lt;/li&gt;
+&lt;li&gt;Hello world&lt;/li&gt;
+&lt;li&gt;HTTP сервер&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;openwrt-роутер-и-openocd:5b51c9e8380c18fc2ee8d866662d01d8&#34;&gt;[ ] OpenWRT роутер и OpenOCD&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Установка&lt;/li&gt;
+&lt;li&gt;Сборка прошивки&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;nim-и-openwrt:5b51c9e8380c18fc2ee8d866662d01d8&#34;&gt;[ ] Nim и OpenWRT&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Тулчейн&lt;/li&gt;
+&lt;li&gt;Hello world&lt;/li&gt;
+&lt;li&gt;HTTP server&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;navspark-mini:5b51c9e8380c18fc2ee8d866662d01d8&#34;&gt;[ ] Navspark-mini&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Что за зверь&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

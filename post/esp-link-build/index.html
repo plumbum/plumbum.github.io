@@ -4,10 +4,10 @@
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Первый пост">
+  <meta name="description" content="">
   <meta name="generator" content="Hugo 0.15-DEV" />
 
-  <title>Первый пост &middot; My hardware</title>
+  <title>ESP-link - сервер последовательного порта &middot; My hardware</title>
 
   
   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
@@ -141,8 +141,8 @@
 
 
 <div class="header">
-  <h1>Первый пост</h1>
-  <h2>Первый пост</h2>
+  <h1>ESP-link - сервер последовательного порта</h1>
+  <h2></h2>
 </div>
 <div class="content">
 
@@ -150,18 +150,113 @@
 
   <div>
     <i class="fa fa-calendar fa-fw"></i>
-    <time>16 Feb 2016, 13:08</time>
+    <time>17 Feb 2016, 12:45</time>
   </div>
 
   
 
   
+  
+  
+  
 
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/esp8266">esp8266</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/http">http</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/serial">serial</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/toolchain">toolchain</a>
+    
+  </div>
+  
   
 
 </div>
 
-  <p>Традиционный первый <del>тост</del> пост.</p>
+  
+
+<p><a href="https://github.com/jeelabs/esp-link">ESP-link</a> это WiFi-Serial мост на базе ESP8266 с дополнительными возможностями:</p>
+
+<ul>
+<li>Программатор микроконтроллеров AVR, микроконтроллеров NXP серии LPC800, а так же модулей ESP8266</li>
+<li>Программатор STK500v1 с загрузкой hex-файлов через HTTP</li>
+<li>Проброс REST HTTP запросов от микроконтроллера в интернет</li>
+<li>Отправка и получение MQTT запросов</li>
+</ul>
+
+<h2 id="сборка-тулчейна:952e0cdaad6579eeb4ee758078f90475">Сборка тулчейна</h2>
+
+<p>В первую очередь нам необходимо собрать тулчейн <a href="https://github.com/pfalcon/esp-open-sdk">ESP Open SDK</a></p>
+
+<p>Здесь и далее рассматриваем сборку под Linux.</p>
+
+<p>Подготавливаем каталог:</p>
+
+<pre><code>mkdir -p $HOME/src/esp
+cd $HOME/src/esp
+</code></pre>
+
+<p><a href="https://github.com/pfalcon/esp-open-sdk#debianubuntu">Устанавлинваем необходимые зависимости</a>.</p>
+
+<p>Получаем исходный код:</p>
+
+<pre><code>git clone --recursive https://github.com/pfalcon/esp-open-sdk.git
+cd esp-open-sdk
+</code></pre>
+
+<p>Собираем тулчейн</p>
+
+<pre><code>make STANDALONE=n
+</code></pre>
+
+<p>Для нормальной работы с тулчейном необходимо прописать к нему путь в переменной окружения PATH</p>
+
+<pre><code>export PATH=$HOME/src/esp/esp-open-sdk/xtensa-lx106-elf/bin:$PATH
+</code></pre>
+
+<h2 id="установка-проприетарного-sdk:952e0cdaad6579eeb4ee758078f90475">Установка проприетарного SDK</h2>
+
+<p>Для нормальной сборки нам всё равно понадобятся части проприетарного SDK</p>
+
+<p><a href="http://bbs.espressif.com/viewtopic.php?f=46&amp;t=850">Скачать</a> его можно на форуме Espressif-а.</p>
+
+<p>Вернёмся в наш основной каталог и распакуем SDK:</p>
+
+<pre><code>cd $HOME/src/esp
+unzip ESP8266_NONOS_SDK_V1.5.2_16_01_29.zip
+</code></pre>
+
+<p>Понятно, что имя полученного вами SDK может отличаться от приведённого.</p>
+
+<p>Сейчас есть одна тонкость. Esp-link хочет версию 1.5.1, последняя версия 1.5.2.
+Просто сделаем симлинк:</p>
+
+<pre><code>ln -s esp_iot_sdk_v1.5.2 esp_iot_sdk_v1.5.1
+</code></pre>
+
+<h2 id="сборка-esp-link:952e0cdaad6579eeb4ee758078f90475">Сборка Esp-link</h2>
+
+<p>Теперь получим исходные коды:</p>
+
+<pre><code>git clone https://github.com/jeelabs/esp-link.git
+</code></pre>
+
+<p>Перейдём в каталог:</p>
+
+<pre><code>cd esp-link
+</code></pre>
+
+<p>И соберём прошивку:</p>
+
+<pre><code>make
+</code></pre>
 
 
   
@@ -169,14 +264,14 @@
   <div class="pure-u-1 pure-u-md-1-2">
     
     <nav class="prev">
-      <a href="http://localhost:1313/post/hugo/"><i class="fa fa-arrow-circle-left fa-fw fa-lg"></i>Генератор сайтов Hugo</a>
+      <a href="http://localhost:1313/post/emgo/"><i class="fa fa-arrow-circle-left fa-fw fa-lg"></i>EmGo</a>
     </nav>
     
   </div>
   <div class="pure-u-1 pure-u-md-1-2">
     
     <nav class="next">
-      <a href="http://localhost:1313/about/">О сайте<i class="fa fa-arrow-circle-right fa-fw fa-lg"></i></a>
+      <a href="http://localhost:1313/contact/">Контактная информация<i class="fa fa-arrow-circle-right fa-fw fa-lg"></i></a>
     </nav>
     
   </div>

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Esp8266 on My hardware</title>
-    <link>http://localhost:1313/tags/esp8266/</link>
-    <description>Recent content in Esp8266 on My hardware</description>
+    <title>Flash on My hardware</title>
+    <link>http://localhost:1313/tags/flash/</link>
+    <description>Recent content in Flash on My hardware</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Tue, 15 Mar 2016 11:59:38 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/esp8266/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/flash/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Прошивка ESP-Link</title>
@@ -85,92 +85,6 @@ cd esp-link-v2.1.7
 &lt;p&gt;Если ранее модуль уже был прошит как esp-link, то обновление прошивки можно провести по воздуху:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;./wiflash &amp;lt;esp-hostname&amp;gt; user1.bin user2.bin
-&lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ESP-link - сервер последовательного порта</title>
-      <link>http://localhost:1313/post/esp-link-build/</link>
-      <pubDate>Wed, 17 Feb 2016 12:45:47 +0300</pubDate>
-      
-      <guid>http://localhost:1313/post/esp-link-build/</guid>
-      <description>
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/jeelabs/esp-link&#34;&gt;ESP-link&lt;/a&gt; это WiFi-Serial мост на базе ESP8266 с дополнительными возможностями:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Программатор микроконтроллеров AVR, микроконтроллеров NXP серии LPC800, а так же модулей ESP8266&lt;/li&gt;
-&lt;li&gt;Программатор STK500v1 с загрузкой hex-файлов через HTTP&lt;/li&gt;
-&lt;li&gt;Проброс REST HTTP запросов от микроконтроллера в интернет&lt;/li&gt;
-&lt;li&gt;Отправка и получение MQTT запросов&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;сборка-тулчейна:952e0cdaad6579eeb4ee758078f90475&#34;&gt;Сборка тулчейна&lt;/h2&gt;
-
-&lt;p&gt;В первую очередь нам необходимо собрать тулчейн &lt;a href=&#34;https://github.com/pfalcon/esp-open-sdk&#34;&gt;ESP Open SDK&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Здесь и далее рассматриваем сборку под Linux.&lt;/p&gt;
-
-&lt;p&gt;Подготавливаем каталог:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;mkdir -p $HOME/src/esp
-cd $HOME/src/esp
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/pfalcon/esp-open-sdk#debianubuntu&#34;&gt;Устанавлинваем необходимые зависимости&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Получаем исходный код:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git clone --recursive https://github.com/pfalcon/esp-open-sdk.git
-cd esp-open-sdk
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Собираем тулчейн&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;make STANDALONE=n
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Для нормальной работы с тулчейном необходимо прописать к нему путь в переменной окружения PATH&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;export PATH=$HOME/src/esp/esp-open-sdk/xtensa-lx106-elf/bin:$PATH
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;установка-проприетарного-sdk:952e0cdaad6579eeb4ee758078f90475&#34;&gt;Установка проприетарного SDK&lt;/h2&gt;
-
-&lt;p&gt;Для нормальной сборки нам всё равно понадобятся части проприетарного SDK&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://bbs.espressif.com/viewtopic.php?f=46&amp;amp;t=850&#34;&gt;Скачать&lt;/a&gt; его можно на форуме Espressif-а.&lt;/p&gt;
-
-&lt;p&gt;Вернёмся в наш основной каталог и распакуем SDK:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd $HOME/src/esp
-unzip ESP8266_NONOS_SDK_V1.5.2_16_01_29.zip
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Понятно, что имя полученного вами SDK может отличаться от приведённого.&lt;/p&gt;
-
-&lt;p&gt;Сейчас есть одна тонкость. Esp-link хочет версию 1.5.1, последняя версия 1.5.2.
-Просто сделаем симлинк:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;ln -s esp_iot_sdk_v1.5.2 esp_iot_sdk_v1.5.1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;сборка-esp-link:952e0cdaad6579eeb4ee758078f90475&#34;&gt;Сборка Esp-link&lt;/h2&gt;
-
-&lt;p&gt;Теперь получим исходные коды:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git clone https://github.com/jeelabs/esp-link.git
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Перейдём в каталог:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd esp-link
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;И соберём прошивку:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;make
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>

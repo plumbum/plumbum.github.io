@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on My hardware</title>
-    <link>http://myhw.ru/tags/hugo/</link>
+    <link>http://localhost:1313/tags/hugo/</link>
     <description>Recent content in Hugo on My hardware</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Tue, 16 Feb 2016 13:18:37 +0300</lastBuildDate>
-    <atom:link href="http://myhw.ru/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Генератор сайтов Hugo</title>
-      <link>http://myhw.ru/post/hugo/</link>
+      <link>http://localhost:1313/post/hugo/</link>
       <pubDate>Tue, 16 Feb 2016 13:18:37 +0300</pubDate>
       
-      <guid>http://myhw.ru/post/hugo/</guid>
+      <guid>http://localhost:1313/post/hugo/</guid>
       <description>&lt;p&gt;Hugo - генератор статичных сайтов подбный &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; написанный на &lt;a href=&#34;http://golang.org&#34;&gt;Go&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul&gt;

@@ -20,13 +20,13 @@
   <!--<![endif]-->
 
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="http://myhw.ru/css/side-menu-old-ie.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/side-menu-old-ie.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="http://myhw.ru/css/side-menu.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/side-menu.css">
   <!--<![endif]-->
 
-  <link rel="stylesheet" href="http://myhw.ru/css/blackburn.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/blackburn.css">
 
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -35,7 +35,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  <link rel="alternate" type="application/rss+xml" title="My hardware" href="http://myhw.ru/index.xml" />
+  <link rel="alternate" type="application/rss+xml" title="My hardware" href="http://localhost:1313/index.xml" />
 
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
@@ -43,7 +43,7 @@
   <script>hljs.initHighlightingOnLoad();</script>
   
 
-  <link rel="shortcut icon" href="http://myhw.ru/img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="http://localhost:1313/img/favicon.ico" type="image/x-icon" />
 
 </head>
 
@@ -59,7 +59,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="http://myhw.ru/">My hardware</a>
+  <a class="pure-menu-heading brand" href="http://localhost:1313/">My hardware</a>
 
 
   <div class="pure-menu">
@@ -67,25 +67,31 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://myhw.ru/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="http://localhost:1313/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://myhw.ru/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+          <a class="pure-menu-link" href="http://localhost:1313/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://myhw.ru/about/"><i class='fa fa-user fa-fw'></i>About</a>
+          <a class="pure-menu-link" href="http://localhost:1313/todo/"><i class='fa fa-check-square-o fa-fw'></i>ToDo</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://myhw.ru/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+          <a class="pure-menu-link" href="http://localhost:1313/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://localhost:1313/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
       
         </li>
       
@@ -96,7 +102,7 @@
   <ul class="pure-menu-list">
 
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="http://myhw.ru/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      <a class="pure-menu-link" href="http://localhost:1313/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
     </li>
 
     
@@ -142,9 +148,69 @@
 <div class="content">
   
     
+  
+    
       <article>
   <header>
-    <h2><a href="http://myhw.ru/post/emgo/">EmGo - Go для микроконтроллеров</a></h2>
+    <h2><a href="http://localhost:1313/post/esp-link-flash/">Прошивка ESP-Link</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>15 Mar 2016, 11:59</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/esp8266">ESP8266</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/serial">Serial</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/telnet">Telnet</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/bridge">Bridge</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/flash">Flash</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/firmware">Firmware</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  ESP-Link - это WiFi-Serial мост на базе SoC ESP8266. Кроме моста имеются дополнительные плюшки как то: Отправка REST запросов. Клиент MQTT протокола. Программатор AVR и LPC микроконтроллеров, а так же других модулей ESP8266 (по последовательному порту). В данный момент стабильной является прошивка версии 2.1.7 и самым простым вариантом установки будет взять собранные бинарные файлы и прошить их в модуль. Поддерживаются как модули с 512 Кбайт флеш-памяти (например ESP-01, ESP-07) так и модули с 4 Мбайт флеш-памяти (например ESP-12).
+  </p>
+
+  
+  <footer>
+    <a href="http://localhost:1313/post/esp-link-flash/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+    
+  
+    
+      <article>
+  <header>
+    <h2><a href="http://localhost:1313/post/emgo/">EmGo</a></h2>
 
     <div class="post-meta">
 
@@ -166,15 +232,15 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/go">Go</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/go">Go</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/stm32">STM32</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/stm32">STM32</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/arm">ARM</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/arm">ARM</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/mcu">MCU</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/mcu">MCU</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/embedded">Embedded</a>
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/embedded">Embedded</a>
     
   </div>
   
@@ -185,12 +251,66 @@
   </header>
 
   <p>
-  EmGo EmGo - язык для программирования микроконтроллеров с Go-синтаксисом. Установка Для установки нам потребуется Go версии 1.6+ Получаем код: go get -u -v github.com/ziutek/emgo Устанавливаем компилятор go install -v github.com/ziutek/emgo/egc Прописываем пременные окружения: export EGCC=/usr/local/arm/arm-eabi/bin/arm-none-eabi-gcc export EGLD=/usr/local/arm/arm-eabi/bin/arm-none-eabi-ld export EGAR=/usr/local/arm/arm-eabi/bin/arm-none-eabi-ar export EGROOT=$HOME/go/src/github.com/ziutek/emgo/egroot export EGPATH=$HOME/go/src/github.com/ziutek/emgo/egpath Для сборки бинарного файла egc использует gcc тулчейн. Можно взять например этот GCC ARM Embedded Я обычно распаковываю его как есть в /usr/local/arm и делаю симлинк: cd /usr/local/arm sudo tar xvf ~/Downloads/gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2 sudo ln -s gcc-arm-none-eabi-5_2-2015q4 arm-eabi Так же нужно установить OpenOCD, если он ещё не установлен: sudo apt-get install openocd Или можно использовать тулзу StLink.
+  EmGo - язык для программирования микроконтроллеров с Go-синтаксисом. Установка Для установки нам потребуется Go версии 1.6+ Получаем код: go get -u -v github.com/ziutek/emgo Устанавливаем компилятор go install -v github.com/ziutek/emgo/egc Прописываем пременные окружения: export EGCC=/usr/local/arm/gcc-arm-none-eabi/bin/arm-none-eabi-gcc export EGLD=/usr/local/arm/gcc-arm-none-eabi/bin/arm-none-eabi-ld export EGAR=/usr/local/arm/gcc-arm-none-eabi/bin/arm-none-eabi-ar export EGROOT=$HOME/go/src/github.com/ziutek/emgo/egroot export EGPATH=$HOME/go/src/github.com/ziutek/emgo/egpath Для сборки бинарного файла egc использует gcc тулчейн. Можно взять например этот GCC ARM Embedded Я обычно распаковываю его как есть в /usr/local/arm и делаю симлинк: cd /usr/local/arm sudo tar xvf ~/Downloads/gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2 sudo ln -s gcc-arm-none-eabi-5_2-2015q4 gcc-arm-none-eabi Так же нужно установить OpenOCD, если он ещё не установлен: sudo apt-get install openocd Или можно использовать тулзу StLink.
   </p>
 
   
   <footer>
-    <a href="http://myhw.ru/post/emgo/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+    <a href="http://localhost:1313/post/emgo/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
+  </footer>
+  
+</article>
+
+    
+  
+    
+      <article>
+  <header>
+    <h2><a href="http://localhost:1313/post/esp-link-build/">ESP-link - сервер последовательного порта</a></h2>
+
+    <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>17 Feb 2016, 12:45</time>
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/esp8266">esp8266</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/http">http</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/serial">serial</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/toolchain">toolchain</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  </header>
+
+  <p>
+  ESP-link это WiFi-Serial мост на базе ESP8266 с дополнительными возможностями: Программатор микроконтроллеров AVR, микроконтроллеров NXP серии LPC800, а так же модулей ESP8266 Программатор STK500v1 с загрузкой hex-файлов через HTTP Проброс REST HTTP запросов от микроконтроллера в интернет Отправка и получение MQTT запросов Сборка тулчейна В первую очередь нам необходимо собрать тулчейн ESP Open SDK Здесь и далее рассматриваем сборку под Linux. Подготавливаем каталог: mkdir -p $HOME/src/esp cd $HOME/src/esp Устанавлинваем необходимые зависимости.
+  </p>
+
+  
+  <footer>
+    <a href="http://localhost:1313/post/esp-link-build/">Read more<i class="fa fa-angle-double-right fa-fw"></i></a>
   </footer>
   
 </article>
@@ -202,7 +322,7 @@
     
       <article>
   <header>
-    <h2><a href="http://myhw.ru/post/hugo/">Генератор сайтов Hugo</a></h2>
+    <h2><a href="http://localhost:1313/post/hugo/">Генератор сайтов Hugo</a></h2>
 
     <div class="post-meta">
 
@@ -221,13 +341,13 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/hugo">Hugo</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/hugo">Hugo</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/go">Go</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/go">Go</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/generator">Generator</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/generator">Generator</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/site">Site</a>
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/site">Site</a>
     
   </div>
   
@@ -249,7 +369,7 @@
     
       <article>
   <header>
-    <h2><a href="http://myhw.ru/post/first/">Первый пост</a></h2>
+    <h2><a href="http://localhost:1313/post/first/">Первый пост</a></h2>
 
     <div class="post-meta">
 
@@ -287,7 +407,7 @@
 
 </div>
 </div>
-<script src="http://myhw.ru/js/ui.js"></script>
+<script src="http://localhost:1313/js/ui.js"></script>
 
 
 <script>
@@ -303,6 +423,9 @@
 
 
 
-</body>
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>
 

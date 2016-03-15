@@ -2,23 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mcu on My hardware</title>
-    <link>http://myhw.ru/tags/mcu/</link>
+    <link>http://localhost:1313/tags/mcu/</link>
     <description>Recent content in Mcu on My hardware</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Mon, 14 Mar 2016 11:25:34 +0300</lastBuildDate>
-    <atom:link href="http://myhw.ru/tags/mcu/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/mcu/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>EmGo - Go для микроконтроллеров</title>
-      <link>http://myhw.ru/post/emgo/</link>
+      <title>EmGo</title>
+      <link>http://localhost:1313/post/emgo/</link>
       <pubDate>Mon, 14 Mar 2016 11:25:34 +0300</pubDate>
       
-      <guid>http://myhw.ru/post/emgo/</guid>
+      <guid>http://localhost:1313/post/emgo/</guid>
       <description>
-
-&lt;h1 id=&#34;emgo:fedc21d604e755bf92c1c776b84b5952&#34;&gt;EmGo&lt;/h1&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/ziutek/emgo&#34;&gt;EmGo&lt;/a&gt; - язык для программирования микроконтроллеров с Go-синтаксисом.&lt;/p&gt;
 
@@ -38,9 +36,9 @@
 
 &lt;p&gt;Прописываем пременные окружения:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;export EGCC=/usr/local/arm/arm-eabi/bin/arm-none-eabi-gcc
-export EGLD=/usr/local/arm/arm-eabi/bin/arm-none-eabi-ld
-export EGAR=/usr/local/arm/arm-eabi/bin/arm-none-eabi-ar
+&lt;pre&gt;&lt;code&gt;export EGCC=/usr/local/arm/gcc-arm-none-eabi/bin/arm-none-eabi-gcc
+export EGLD=/usr/local/arm/gcc-arm-none-eabi/bin/arm-none-eabi-ld
+export EGAR=/usr/local/arm/gcc-arm-none-eabi/bin/arm-none-eabi-ar
 
 export EGROOT=$HOME/go/src/github.com/ziutek/emgo/egroot
 export EGPATH=$HOME/go/src/github.com/ziutek/emgo/egpath
@@ -52,7 +50,7 @@ export EGPATH=$HOME/go/src/github.com/ziutek/emgo/egpath
 
 &lt;pre&gt;&lt;code&gt;cd /usr/local/arm
 sudo tar xvf ~/Downloads/gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2
-sudo ln -s gcc-arm-none-eabi-5_2-2015q4 arm-eabi
+sudo ln -s gcc-arm-none-eabi-5_2-2015q4 gcc-arm-none-eabi
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Так же нужно установить &lt;code&gt;OpenOCD&lt;/code&gt;, если он ещё не установлен:&lt;/p&gt;

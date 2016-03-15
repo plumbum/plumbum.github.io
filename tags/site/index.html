@@ -20,13 +20,13 @@
   <!--<![endif]-->
 
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="http://myhw.ru/css/side-menu-old-ie.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/side-menu-old-ie.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="http://myhw.ru/css/side-menu.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/side-menu.css">
   <!--<![endif]-->
 
-  <link rel="stylesheet" href="http://myhw.ru/css/blackburn.css">
+  <link rel="stylesheet" href="http://localhost:1313/css/blackburn.css">
 
   
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -35,7 +35,7 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  <link rel="alternate" type="application/rss+xml" title="My hardware" href="http://myhw.ru/index.xml" />
+  <link rel="alternate" type="application/rss+xml" title="My hardware" href="http://localhost:1313/index.xml" />
 
   
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
@@ -43,7 +43,7 @@
   <script>hljs.initHighlightingOnLoad();</script>
   
 
-  <link rel="shortcut icon" href="http://myhw.ru/img/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="http://localhost:1313/img/favicon.ico" type="image/x-icon" />
 
 </head>
 
@@ -59,7 +59,7 @@
 <div id="menu">
 
   
-  <a class="pure-menu-heading brand" href="http://myhw.ru/">My hardware</a>
+  <a class="pure-menu-heading brand" href="http://localhost:1313/">My hardware</a>
 
 
   <div class="pure-menu">
@@ -67,25 +67,31 @@
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://myhw.ru/"><i class='fa fa-home fa-fw'></i>Home</a>
+          <a class="pure-menu-link" href="http://localhost:1313/"><i class='fa fa-home fa-fw'></i>Home</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://myhw.ru/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+          <a class="pure-menu-link" href="http://localhost:1313/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://myhw.ru/about/"><i class='fa fa-user fa-fw'></i>About</a>
+          <a class="pure-menu-link" href="http://localhost:1313/todo/"><i class='fa fa-check-square-o fa-fw'></i>ToDo</a>
       
         </li>
       
       
         <li class="pure-menu-item">
-          <a class="pure-menu-link" href="http://myhw.ru/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
+          <a class="pure-menu-link" href="http://localhost:1313/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://localhost:1313/contact/"><i class='fa fa-phone fa-fw'></i>Contact</a>
       
         </li>
       
@@ -96,7 +102,7 @@
   <ul class="pure-menu-list">
 
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="http://myhw.ru/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
+      <a class="pure-menu-link" href="http://localhost:1313/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
     </li>
 
     
@@ -142,7 +148,7 @@
   
     <article>
   <header>
-    <h2><a href="http://myhw.ru/post/hugo/">Генератор сайтов Hugo</a></h2>
+    <h2><a href="http://localhost:1313/post/hugo/">Генератор сайтов Hugo</a></h2>
 
     <div class="post-meta">
 
@@ -161,13 +167,13 @@
   <div>
     <i class="fa fa-tags fa-fw"></i>
     
-      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/hugo">Hugo</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/hugo">Hugo</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/go">Go</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/go">Go</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/generator">Generator</a>&nbsp;&#47;
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/generator">Generator</a>&nbsp;&#47;
     
-      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/site">Site</a>
+      <a class="post-taxonomy-tag" href="http://localhost:1313/tags/site">Site</a>
     
   </div>
   
@@ -189,7 +195,7 @@
 
 </div>
 </div>
-<script src="http://myhw.ru/js/ui.js"></script>
+<script src="http://localhost:1313/js/ui.js"></script>
 
 
 <script>
@@ -205,5 +211,8 @@
 
 
 
-</body>
+<script data-no-instant>document.write('<script src="http://'
+        + (location.host || 'localhost').split(':')[0]
+		+ ':1313/livereload.js?mindelay=10"></'
+        + 'script>')</script></body>
 </html>
