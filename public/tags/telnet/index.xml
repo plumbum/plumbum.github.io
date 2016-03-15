@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Telnet on My hardware</title>
-    <link>http://localhost:1313/tags/telnet/</link>
+    <link>http://myhw.ru/tags/telnet/</link>
     <description>Recent content in Telnet on My hardware</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Tue, 15 Mar 2016 11:59:38 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/telnet/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://myhw.ru/tags/telnet/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Прошивка ESP-Link</title>
-      <link>http://localhost:1313/post/esp-link-flash/</link>
+      <link>http://myhw.ru/post/esp-link-flash/</link>
       <pubDate>Tue, 15 Mar 2016 11:59:38 +0300</pubDate>
       
-      <guid>http://localhost:1313/post/esp-link-flash/</guid>
+      <guid>http://myhw.ru/post/esp-link-flash/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/jeelabs/esp-link&#34;&gt;ESP-Link&lt;/a&gt; - это WiFi-Serial мост на базе SoC ESP8266.
@@ -58,7 +58,7 @@ cd esp-link-v2.1.7
 &lt;p&gt;Для нормальной работы модуля вывод &lt;code&gt;CH_PD&lt;/code&gt; должен быть подтянут к питанию через резистор 1-10 Ком,
 вывод &lt;code&gt;GPIO15&lt;/code&gt; должен быть подтянут к земле через резистор 1-10 Ком.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/esp/ESP_min.png&#34; alt=&#34;ESP&#34; /&gt; &lt;a href=&#34;http://esp8266.github.io/Arduino/versions/2.1.0-rc2/doc/boards.html#minimal&#34;&gt;Minimal&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://myhw.ru/img/esp/ESP_min.png&#34; alt=&#34;ESP&#34; /&gt; &lt;a href=&#34;http://esp8266.github.io/Arduino/versions/2.1.0-rc2/doc/boards.html#minimal&#34;&gt;Minimal&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;Для входа в режим программирования следует подтянуть выход &lt;code&gt;GPIO0&lt;/code&gt; к земле через резистор 1-10 Ком,
 и произвести сброс контроллера кратковременной подачей низкого уровня на вход &lt;code&gt;RESET&lt;/code&gt;.&lt;/p&gt;

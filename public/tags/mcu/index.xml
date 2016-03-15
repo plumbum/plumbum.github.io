@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mcu on My hardware</title>
-    <link>http://localhost:1313/tags/mcu/</link>
+    <link>http://myhw.ru/tags/mcu/</link>
     <description>Recent content in Mcu on My hardware</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Mon, 14 Mar 2016 11:25:34 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/mcu/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://myhw.ru/tags/mcu/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>EmGo</title>
-      <link>http://localhost:1313/post/emgo/</link>
+      <link>http://myhw.ru/post/emgo/</link>
       <pubDate>Mon, 14 Mar 2016 11:25:34 +0300</pubDate>
       
-      <guid>http://localhost:1313/post/emgo/</guid>
+      <guid>http://myhw.ru/post/emgo/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/ziutek/emgo&#34;&gt;EmGo&lt;/a&gt; - язык для программирования микроконтроллеров с Go-синтаксисом.&lt;/p&gt;
