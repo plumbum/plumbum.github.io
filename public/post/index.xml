@@ -2,23 +2,100 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My hardware</title>
-    <link>http://myhw.ru/post/</link>
+    <link>http://localhost:1313/post/</link>
     <description>Recent content in Posts on My hardware</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 14 Mar 2016 11:25:34 +0300</lastBuildDate>
-    <atom:link href="http://myhw.ru/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Mar 2016 11:59:38 +0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>EmGo - Go для микроконтроллеров</title>
-      <link>http://myhw.ru/post/emgo/</link>
-      <pubDate>Mon, 14 Mar 2016 11:25:34 +0300</pubDate>
+      <title>Прошивка ESP-Link</title>
+      <link>http://localhost:1313/post/esp-link-flash/</link>
+      <pubDate>Tue, 15 Mar 2016 11:59:38 +0300</pubDate>
       
-      <guid>http://myhw.ru/post/emgo/</guid>
+      <guid>http://localhost:1313/post/esp-link-flash/</guid>
       <description>
 
-&lt;h1 id=&#34;emgo:fedc21d604e755bf92c1c776b84b5952&#34;&gt;EmGo&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/jeelabs/esp-link&#34;&gt;ESP-Link&lt;/a&gt; - это WiFi-Serial мост на базе SoC ESP8266.
+Кроме моста имеются дополнительные плюшки как то:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Отправка REST запросов.&lt;/li&gt;
+&lt;li&gt;Клиент MQTT протокола.&lt;/li&gt;
+&lt;li&gt;Программатор AVR и LPC микроконтроллеров, а так же других модулей ESP8266 (по последовательному порту).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;В данный момент стабильной является прошивка версии &lt;a href=&#34;https://github.com/jeelabs/esp-link/releases/tag/v2.1.7&#34;&gt;2.1.7&lt;/a&gt;
+и самым простым вариантом установки будет взять собранные бинарные файлы и прошить их в модуль.&lt;/p&gt;
+
+&lt;p&gt;Поддерживаются как модули с 512 Кбайт флеш-памяти (например ESP-01, ESP-07) так и модули с 4 Мбайт флеш-памяти (например ESP-12).&lt;/p&gt;
+
+&lt;p&gt;В общем и целом, ограничений на типы модулей нет, ESP-Link успешно конфигурируется под разные GPIO через Web-интерфейс.&lt;/p&gt;
+
+&lt;h2 id=&#34;прошивка:82672e092b5545a43cc956b57c90b7a6&#34;&gt;Прошивка&lt;/h2&gt;
+
+&lt;p&gt;Для прошивки нам потребуется утилита &lt;a href=&#34;https://github.com/themadinventor/esptool&#34;&gt;ESPTool&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Для себя я не стал её инсталлировать в систему, а просто скопировал &lt;a href=&#34;https://github.com/themadinventor/esptool/blob/master/esptool.py&#34;&gt;esptool.py&lt;/a&gt;
+в &lt;code&gt;~/bin&lt;/code&gt;, а библиотеку &lt;a href=&#34;https://github.com/pyserial/pyserial&#34;&gt;pyserial&lt;/a&gt; поставил через пакетный менеджер дистрибутива.&lt;/p&gt;
+
+&lt;p&gt;На &lt;a href=&#34;https://github.com/jeelabs/esp-link/releases&#34;&gt;странице релизов&lt;/a&gt; скачиваем
+последнюю &lt;a href=&#34;https://github.com/jeelabs/esp-link/releases/tag/v2.1.7&#34;&gt;стабильную прошивку&lt;/a&gt;
+или &lt;a href=&#34;https://github.com/jeelabs/esp-link/releases/tag/v2.2.beta2&#34;&gt;бету&lt;/a&gt;, если есть желание поэкспериментировать.&lt;/p&gt;
+
+&lt;p&gt;Распаковываем полученный файл:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tar xzvf esp-link-v2.1.7.tgz
+cd esp-link-v2.1.7
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Подключаем прошиваемый модуль к компьютеру через Usb-TTLSerial переходник. Следует помнить, что выходы TX-RX
+переходника должны выдавать напряжение от 0 до 3.3 вольт. Переходники с напряжением 5 вольт, могут безвозвратно
+повредить модуль.&lt;/p&gt;
+
+&lt;p&gt;Для нормальной работы модуля вывод &lt;code&gt;CH_PD&lt;/code&gt; должен быть подтянут к питанию через резистор 1-10 Ком,
+вывод &lt;code&gt;GPIO15&lt;/code&gt; должен быть подтянут к земле через резистор 1-10 Ком.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://localhost:1313/img/esp/ESP_min.png&#34; alt=&#34;ESP&#34; /&gt; &lt;a href=&#34;http://esp8266.github.io/Arduino/versions/2.1.0-rc2/doc/boards.html#minimal&#34;&gt;Minimal&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Для входа в режим программирования следует подтянуть выход &lt;code&gt;GPIO0&lt;/code&gt; к земле через резистор 1-10 Ком,
+и произвести сброс контроллера кратковременной подачей низкого уровня на вход &lt;code&gt;RESET&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;После этого модуль готов к прошивке.&lt;/p&gt;
+
+&lt;p&gt;Для версии с 4 Мбайтами флеш-памяти выполняем команду:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash -fs 32m -ff 80m \
+    0x00000 boot_v1.4\(b1\).bin 0x1000 user1.bin 0x3FE000 blank.bin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Для версии с 512 Кбайтами флеш-памяти выполняем команду:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash -fs 4m -ff 40m \
+    0x00000 boot_v1.4\(b1\).bin 0x1000 user1.bin 0x7E000 blank.bin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Если возникли проблемы в процессе прошивки то можно попробовать снизить скорость обмена по последовательному порту &lt;code&gt;--baud 115200&lt;/code&gt;
+и/или скорость обмена с SPI-flash &lt;code&gt;-ff 20m&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;После успешной прошивки модуль доступен по сети WiFi как точка доступа.&lt;/p&gt;
+
+&lt;p&gt;Если ранее модуль уже был прошит как esp-link, то обновление прошивки можно провести по воздуху:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./wiflash &amp;lt;esp-hostname&amp;gt; user1.bin user2.bin
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>EmGo</title>
+      <link>http://localhost:1313/post/emgo/</link>
+      <pubDate>Mon, 14 Mar 2016 11:25:34 +0300</pubDate>
+      
+      <guid>http://localhost:1313/post/emgo/</guid>
+      <description>
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/ziutek/emgo&#34;&gt;EmGo&lt;/a&gt; - язык для программирования микроконтроллеров с Go-синтаксисом.&lt;/p&gt;
 
@@ -38,9 +115,9 @@
 
 &lt;p&gt;Прописываем пременные окружения:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;export EGCC=/usr/local/arm/arm-eabi/bin/arm-none-eabi-gcc
-export EGLD=/usr/local/arm/arm-eabi/bin/arm-none-eabi-ld
-export EGAR=/usr/local/arm/arm-eabi/bin/arm-none-eabi-ar
+&lt;pre&gt;&lt;code&gt;export EGCC=/usr/local/arm/gcc-arm-none-eabi/bin/arm-none-eabi-gcc
+export EGLD=/usr/local/arm/gcc-arm-none-eabi/bin/arm-none-eabi-ld
+export EGAR=/usr/local/arm/gcc-arm-none-eabi/bin/arm-none-eabi-ar
 
 export EGROOT=$HOME/go/src/github.com/ziutek/emgo/egroot
 export EGPATH=$HOME/go/src/github.com/ziutek/emgo/egpath
@@ -52,7 +129,7 @@ export EGPATH=$HOME/go/src/github.com/ziutek/emgo/egpath
 
 &lt;pre&gt;&lt;code&gt;cd /usr/local/arm
 sudo tar xvf ~/Downloads/gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2
-sudo ln -s gcc-arm-none-eabi-5_2-2015q4 arm-eabi
+sudo ln -s gcc-arm-none-eabi-5_2-2015q4 gcc-arm-none-eabi
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Так же нужно установить &lt;code&gt;OpenOCD&lt;/code&gt;, если он ещё не установлен:&lt;/p&gt;
@@ -100,11 +177,97 @@ sudo ln -s gcc-arm-none-eabi-5_2-2015q4 arm-eabi
     </item>
     
     <item>
+      <title>ESP-link - сервер последовательного порта</title>
+      <link>http://localhost:1313/post/esp-link-build/</link>
+      <pubDate>Wed, 17 Feb 2016 12:45:47 +0300</pubDate>
+      
+      <guid>http://localhost:1313/post/esp-link-build/</guid>
+      <description>
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/jeelabs/esp-link&#34;&gt;ESP-link&lt;/a&gt; это WiFi-Serial мост на базе ESP8266 с дополнительными возможностями:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Программатор микроконтроллеров AVR, микроконтроллеров NXP серии LPC800, а так же модулей ESP8266&lt;/li&gt;
+&lt;li&gt;Программатор STK500v1 с загрузкой hex-файлов через HTTP&lt;/li&gt;
+&lt;li&gt;Проброс REST HTTP запросов от микроконтроллера в интернет&lt;/li&gt;
+&lt;li&gt;Отправка и получение MQTT запросов&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;сборка-тулчейна:952e0cdaad6579eeb4ee758078f90475&#34;&gt;Сборка тулчейна&lt;/h2&gt;
+
+&lt;p&gt;В первую очередь нам необходимо собрать тулчейн &lt;a href=&#34;https://github.com/pfalcon/esp-open-sdk&#34;&gt;ESP Open SDK&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Здесь и далее рассматриваем сборку под Linux.&lt;/p&gt;
+
+&lt;p&gt;Подготавливаем каталог:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mkdir -p $HOME/src/esp
+cd $HOME/src/esp
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/pfalcon/esp-open-sdk#debianubuntu&#34;&gt;Устанавлинваем необходимые зависимости&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Получаем исходный код:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone --recursive https://github.com/pfalcon/esp-open-sdk.git
+cd esp-open-sdk
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Собираем тулчейн&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;make STANDALONE=n
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Для нормальной работы с тулчейном необходимо прописать к нему путь в переменной окружения PATH&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export PATH=$HOME/src/esp/esp-open-sdk/xtensa-lx106-elf/bin:$PATH
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;установка-проприетарного-sdk:952e0cdaad6579eeb4ee758078f90475&#34;&gt;Установка проприетарного SDK&lt;/h2&gt;
+
+&lt;p&gt;Для нормальной сборки нам всё равно понадобятся части проприетарного SDK&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://bbs.espressif.com/viewtopic.php?f=46&amp;amp;t=850&#34;&gt;Скачать&lt;/a&gt; его можно на форуме Espressif-а.&lt;/p&gt;
+
+&lt;p&gt;Вернёмся в наш основной каталог и распакуем SDK:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd $HOME/src/esp
+unzip ESP8266_NONOS_SDK_V1.5.2_16_01_29.zip
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Понятно, что имя полученного вами SDK может отличаться от приведённого.&lt;/p&gt;
+
+&lt;p&gt;Сейчас есть одна тонкость. Esp-link хочет версию 1.5.1, последняя версия 1.5.2.
+Просто сделаем симлинк:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ln -s esp_iot_sdk_v1.5.2 esp_iot_sdk_v1.5.1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;сборка-esp-link:952e0cdaad6579eeb4ee758078f90475&#34;&gt;Сборка Esp-link&lt;/h2&gt;
+
+&lt;p&gt;Теперь получим исходные коды:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git clone https://github.com/jeelabs/esp-link.git
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Перейдём в каталог:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd esp-link
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;И соберём прошивку:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;make
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Генератор сайтов Hugo</title>
-      <link>http://myhw.ru/post/hugo/</link>
+      <link>http://localhost:1313/post/hugo/</link>
       <pubDate>Tue, 16 Feb 2016 13:18:37 +0300</pubDate>
       
-      <guid>http://myhw.ru/post/hugo/</guid>
+      <guid>http://localhost:1313/post/hugo/</guid>
       <description>&lt;p&gt;Hugo - генератор статичных сайтов подбный &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; написанный на &lt;a href=&#34;http://golang.org&#34;&gt;Go&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
@@ -132,10 +295,10 @@ sudo ln -s gcc-arm-none-eabi-5_2-2015q4 arm-eabi
     
     <item>
       <title>Первый пост</title>
-      <link>http://myhw.ru/post/first/</link>
+      <link>http://localhost:1313/post/first/</link>
       <pubDate>Tue, 16 Feb 2016 13:08:46 +0300</pubDate>
       
-      <guid>http://myhw.ru/post/first/</guid>
+      <guid>http://localhost:1313/post/first/</guid>
       <description>&lt;p&gt;Традиционный первый &lt;del&gt;тост&lt;/del&gt; пост.&lt;/p&gt;
 </description>
     </item>

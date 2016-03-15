@@ -2,33 +2,48 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://myhw.ru/</loc>
-    <lastmod>2016-03-14T11:25:34+03:00</lastmod>
+    <loc>http://localhost:1313/</loc>
+    <lastmod>2016-03-15T12:13:06+03:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://myhw.ru/post/emgo/</loc>
+    <loc>http://localhost:1313/todo/</loc>
+    <lastmod>2016-03-15T12:13:06+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/esp-link-flash/</loc>
+    <lastmod>2016-03-15T11:59:38+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/post/emgo/</loc>
     <lastmod>2016-03-14T11:25:34+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://myhw.ru/contact/</loc>
+    <loc>http://localhost:1313/post/esp-link-build/</loc>
+    <lastmod>2016-02-17T12:45:47+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://localhost:1313/contact/</loc>
     <lastmod>2016-02-16T13:51:59+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://myhw.ru/post/hugo/</loc>
+    <loc>http://localhost:1313/post/hugo/</loc>
     <lastmod>2016-02-16T13:18:37+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://myhw.ru/post/first/</loc>
+    <loc>http://localhost:1313/post/first/</loc>
     <lastmod>2016-02-16T13:08:46+03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://myhw.ru/about/</loc>
+    <loc>http://localhost:1313/about/</loc>
     <lastmod>2016-02-16T12:39:22+03:00</lastmod>
   </url>
   
