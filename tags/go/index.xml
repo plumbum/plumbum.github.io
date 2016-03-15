@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on My hardware</title>
-    <link>http://localhost:1313/tags/go/</link>
+    <link>http://myhw.ru/tags/go/</link>
     <description>Recent content in Go on My hardware</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
     <lastBuildDate>Mon, 14 Mar 2016 11:25:34 +0300</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/go/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://myhw.ru/tags/go/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>EmGo</title>
-      <link>http://localhost:1313/post/emgo/</link>
+      <link>http://myhw.ru/post/emgo/</link>
       <pubDate>Mon, 14 Mar 2016 11:25:34 +0300</pubDate>
       
-      <guid>http://localhost:1313/post/emgo/</guid>
+      <guid>http://myhw.ru/post/emgo/</guid>
       <description>
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/ziutek/emgo&#34;&gt;EmGo&lt;/a&gt; - язык для программирования микроконтроллеров с Go-синтаксисом.&lt;/p&gt;
@@ -99,10 +99,10 @@ sudo ln -s gcc-arm-none-eabi-5_2-2015q4 gcc-arm-none-eabi
     
     <item>
       <title>Генератор сайтов Hugo</title>
-      <link>http://localhost:1313/post/hugo/</link>
+      <link>http://myhw.ru/post/hugo/</link>
       <pubDate>Tue, 16 Feb 2016 13:18:37 +0300</pubDate>
       
-      <guid>http://localhost:1313/post/hugo/</guid>
+      <guid>http://myhw.ru/post/hugo/</guid>
       <description>&lt;p&gt;Hugo - генератор статичных сайтов подбный &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; написанный на &lt;a href=&#34;http://golang.org&#34;&gt;Go&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
