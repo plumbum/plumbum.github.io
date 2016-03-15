@@ -27,25 +27,31 @@ theme = "blackburn"
   [[menu.main]]
     name = "Home"
     pre = "<i class='fa fa-home fa-fw'></i>"
-    weight = 0
+    weight = 10
     identifier = "home"
     url = "/"
   [[menu.main]]
     name = "Posts"
     pre = "<i class='fa fa-list fa-fw'></i>"
-    weight = 1
+    weight = 20
     identifier = "post"
     url = "/post/"
   [[menu.main]]
+    name = "ToDo"
+    pre = "<i class='fa fa-check-square-o fa-fw'></i>"
+    weight = 30
+    identifier = "todo"
+    url = "/todo/"
+  [[menu.main]]
     name = "About"
     pre = "<i class='fa fa-user fa-fw'></i>"
-    weight = 2
+    weight = 40
     identifier = "about"
     url = "/about/"
   [[menu.main]]
     name = "Contact"
     pre = "<i class='fa fa-phone fa-fw'></i>"
-    weight = 3
+    weight = 50
     url = "/contact/"
 
 [social]

@@ -1,14 +1,12 @@
 +++
 date = "2016-03-14T11:25:34+03:00"
-title = "EmGo - Go для микроконтроллеров"
-description = "EmGo - язык для программирования микроконтроллеров с Go-синтаксисом"
+title = "EmGo"
+description = "Язык для программирования микроконтроллеров с Go-синтаксисом"
 draft = false
 tags = ["Go", "STM32", "ARM", "MCU", "Embedded"]
 topics = []
 
 +++
-
-# EmGo
 
 [EmGo](https://github.com/ziutek/emgo) - язык для программирования микроконтроллеров с Go-синтаксисом.
 
@@ -27,11 +25,10 @@ topics = []
 
 Прописываем пременные окружения:
 
-
 ```
-export EGCC=/usr/local/arm/arm-eabi/bin/arm-none-eabi-gcc
-export EGLD=/usr/local/arm/arm-eabi/bin/arm-none-eabi-ld
-export EGAR=/usr/local/arm/arm-eabi/bin/arm-none-eabi-ar
+export EGCC=/usr/local/arm/gcc-arm-none-eabi/bin/arm-none-eabi-gcc
+export EGLD=/usr/local/arm/gcc-arm-none-eabi/bin/arm-none-eabi-ld
+export EGAR=/usr/local/arm/gcc-arm-none-eabi/bin/arm-none-eabi-ar
 
 export EGROOT=$HOME/go/src/github.com/ziutek/emgo/egroot
 export EGPATH=$HOME/go/src/github.com/ziutek/emgo/egpath
@@ -44,7 +41,7 @@ export EGPATH=$HOME/go/src/github.com/ziutek/emgo/egpath
 ```
 cd /usr/local/arm
 sudo tar xvf ~/Downloads/gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2
-sudo ln -s gcc-arm-none-eabi-5_2-2015q4 arm-eabi
+sudo ln -s gcc-arm-none-eabi-5_2-2015q4 gcc-arm-none-eabi
 ```
 
 Так же нужно установить `OpenOCD`, если он ещё не установлен:
