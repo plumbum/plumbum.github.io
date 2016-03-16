@@ -41,13 +41,7 @@ cd esp-open-sdk
 Собираем тулчейн
 
 ~~~
-make STANDALONE=n
-~~~
-
-Для нормальной работы с тулчейном необходимо прописать к нему путь в переменной окружения PATH
-
-~~~
-export PATH=$HOME/src/esp/esp-open-sdk/xtensa-lx106-elf/bin:$PATH
+make
 ~~~
 
 Установка проприетарного SDK
@@ -94,4 +88,6 @@ cd esp-link
 ~~~
 make
 ~~~
+
+В случае успеха файлы прошивки будут лежать в каталоге `firmware`.
 
