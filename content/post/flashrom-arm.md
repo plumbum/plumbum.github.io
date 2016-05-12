@@ -12,6 +12,7 @@ topics = []
 но при отсутствии таковых можно применить случайно оказавшийся под рукой микрокомпьютер с Linux на борту.
 Например OrangePi One с [Armbian](http://www.armbian.com/orange-pi-one/).
 
+Можно воспользоваться так же [RaspberryPi](https://www.flashrom.org/RaspberryPi).
 
 ## Подключение
 
