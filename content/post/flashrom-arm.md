@@ -2,7 +2,7 @@
 date = "2016-05-12T16:18:49+03:00"
 description = "Сборка flashrom под ARM на примере OrangePi One"
 draft = true
-tags = [ARM, Build, OrangePi, RaspberryPi, Linux, Spi, SpiFlash]
+tags = ["ARM", "Build", "OrangePi", "RaspberryPi", "Linux", "Spi", "SpiFlash"]
 title = "Используем flashrom"
 topics = []
 
