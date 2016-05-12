@@ -85,6 +85,16 @@ No EEPROM/flash device found.
 Note: flashrom can never write if the flash chip isn't found automatically.
 ```
 
+```
+# flashrom -p linux_spi:dev=/dev/spidev0.0 
+flashrom v0.9.9-r1955 on Linux 3.4.112-sun8i (armv7l)
+flashrom is free software, get the source code at https://flashrom.org
+
+Calibrating delay loop... OK.
+Found Spansion flash chip "S25FL032A/P" (4096 kB, SPI) on linux_spi.
+No operations were specified.
+```
+
 TODO чтение
 
 TODO запись
