@@ -4,11 +4,14 @@ description = "Прошивка готовoй сборки ESP-Link"
 draft = false
 tags = ["ESP8266", "Serial", "Telnet", "Bridge", "Flash", "Firmware"]
 title = "Прошивка ESP-Link"
-topics = []
+topics = ["Electronics"]
 
 +++
 
 [ESP-Link](https://github.com/jeelabs/esp-link) - это WiFi-Serial мост на базе SoC ESP8266.
+
+<!--more-->
+
 Кроме моста имеются дополнительные плюшки как то:
 
   * Отправка REST запросов.

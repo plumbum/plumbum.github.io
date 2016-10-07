@@ -4,15 +4,15 @@ description = "Сборка flashrom под ARM на примере OrangePi One
 draft = true
 tags = ["ARM", "Build", "OrangePi", "RaspberryPi", "Linux", "Spi", "SpiFlash"]
 title = "Используем flashrom"
-topics = []
+topics = ["Electronics"]
 
 +++
 
 Для прошивки SPI Flash можно пользоваться специализированными программаторами
 но при отсутствии таковых можно применить случайно оказавшийся под рукой микрокомпьютер с Linux на борту.
-Например OrangePi One с [Armbian](http://www.armbian.com/orange-pi-one/).
+Например OrangePi One с [Armbian](http://www.armbian.com/orange-pi-one/) или  [RaspberryPi](https://www.flashrom.org/RaspberryPi).
 
-Можно воспользоваться так же [RaspberryPi](https://www.flashrom.org/RaspberryPi).
+<!--more-->
 
 ## Подключение
 
@@ -20,10 +20,9 @@ topics = []
 
 Так что сделаем это заранее.
 
-**Здесь должно быть фото**
+**TODO** Здесь должно быть фото
 
-**А здесь табличка**
-
+**TODO** А здесь табличка
 
 ## Сборка
 
@@ -95,9 +94,9 @@ Found Spansion flash chip "S25FL032A/P" (4096 kB, SPI) on linux_spi.
 No operations were specified.
 ```
 
-TODO чтение
+**TODO** чтение
 
-TODO запись
+**TODO** запись
 
 ## На сладкое
 

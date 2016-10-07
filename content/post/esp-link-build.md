@@ -4,11 +4,13 @@ description = ""
 draft = true
 tags = ["esp8266", "http", "serial", "toolchain"]
 title = "ESP-link - сервер последовательного порта"
-topics = []
+topics = ["Electronics"]
 
 +++
 
 [ESP-link](https://github.com/jeelabs/esp-link) это WiFi-Serial мост на базе ESP8266 с дополнительными возможностями:
+
+<!--more-->
 
   * Программатор микроконтроллеров AVR, микроконтроллеров NXP серии LPC800, а так же модулей ESP8266
   * Программатор STK500v1 с загрузкой hex-файлов через HTTP

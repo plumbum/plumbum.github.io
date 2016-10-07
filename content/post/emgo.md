@@ -4,12 +4,13 @@ title = "EmGo"
 description = "Язык для программирования микроконтроллеров с Go-синтаксисом"
 draft = false
 tags = ["Go", "STM32", "ARM", "MCU", "Embedded"]
-topics = []
+topics = ["Electronics"]
 
 +++
 
 [EmGo](https://github.com/ziutek/emgo) - язык для программирования микроконтроллеров с Go-синтаксисом.
 
+<!--more-->
 
 ## Установка
 
