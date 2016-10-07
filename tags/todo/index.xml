@@ -17,7 +17,9 @@
       <guid>http://myhw.ru/todo/</guid>
       <description>
 
-&lt;h2 id=&#34;esp-link&#34;&gt;[ ] ESP-Link&lt;/h2&gt;
+&lt;h2 id=&#34;home-light-control&#34;&gt;[ ] Home Light Control&lt;/h2&gt;
+
+&lt;h2 id=&#34;esp-link&#34;&gt;[] ESP-Link&lt;/h2&gt;
 
 &lt;ul class=&#34;task-list&#34;&gt;
 &lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; &lt;a href=&#34;http://myhw.ru/post/esp-link-flash&#34;&gt;Прошивка&lt;/a&gt;&lt;/li&gt;
