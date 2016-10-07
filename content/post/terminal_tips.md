@@ -4,7 +4,7 @@ title = "Консоль и терминал"
 description = ""
 draft = false
 tags = ["Terminal", "Console", "Bash"]
-topics = ["Linux"]
+topics = ["Linux", "Tips"]
 
 +++
 

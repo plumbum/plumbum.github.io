@@ -79,5 +79,171 @@
 Например &amp;#x00A9; &lt;code&gt;&amp;amp;#x00A9;&lt;/code&gt;&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>Консоль и терминал</title>
+      <link>http://myhw.ru/post/terminal_tips/</link>
+      <pubDate>Fri, 16 Sep 2016 12:15:00 +0300</pubDate>
+      
+      <guid>http://myhw.ru/post/terminal_tips/</guid>
+      <description>&lt;p&gt;Удобная работа в терминали Linux&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;клавиатурные-сочетания&#34;&gt;Клавиатурные сочетания&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Действие&lt;/th&gt;
+&lt;th&gt;Команда&lt;/th&gt;
+&lt;th&gt;Сочетание&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Начало строки&lt;/td&gt;
+&lt;td&gt;Home&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;a&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Конец строки&lt;/td&gt;
+&lt;td&gt;End&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;e&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Один символ вперед&lt;/td&gt;
+&lt;td&gt;Right Arrow&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;f&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Один символ назад&lt;/td&gt;
+&lt;td&gt;Left Arrow&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;b&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Удалить символ под курсором&lt;/td&gt;
+&lt;td&gt;Delete&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;d&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Удалить символ перед курсором&lt;/td&gt;
+&lt;td&gt;Backspace&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;h&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Предыдущая команда в истории&lt;/td&gt;
+&lt;td&gt;Up Arrow&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;p&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Следующая команда в истории&lt;/td&gt;
+&lt;td&gt;Down Arrow&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;n&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Ввод команды&lt;/td&gt;
+&lt;td&gt;Enter&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;j&lt;/code&gt; или &lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;m&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;На одно слово назад&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Meta&lt;/code&gt;-&lt;code&gt;b&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;На одно слово вперёд&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Meta&lt;/code&gt;-&lt;code&gt;f&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Вырезать предыдущее слово&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;w&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Вырезать все к концу строки&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;k&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Вырезать все к началу строки&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;u&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Вставить вырезанное ранее&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;y&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Откатить изменение&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;_&lt;/code&gt; (Ctrl+Shift+-)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Очистить экран&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;l&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Поменять местами два символа&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;t&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; &lt;code&gt;Ctrl-&lt;/code&gt; = hold control, &lt;code&gt;meta-&lt;/code&gt; = hold meta (where meta is usually the &lt;strong&gt;alt&lt;/strong&gt; or &lt;strong&gt;escape&lt;/strong&gt; key).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://habrahabr.ru/post/266933/&#34;&gt;источник&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Настройка раскладок клавиатуры</title>
+      <link>http://myhw.ru/post/keyboard_layout/</link>
+      <pubDate>Tue, 14 Jun 2016 11:00:00 +0300</pubDate>
+      
+      <guid>http://myhw.ru/post/keyboard_layout/</guid>
+      <description>&lt;p&gt;Настройка раскладок клавиатуры&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;просмотр-текущих-опций&#34;&gt;Просмотр текущих опций&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;$ setxkbmap -query
+rules:      evdev
+model:      pc105
+layout:     us,ru
+variant:    ,
+options:    ctrl:nocaps,grp:alt_shift_toggle,grp_led:scroll
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;установка-новых-значений&#34;&gt;Установка новых значений&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;$ setxkbmap -option -option &amp;quot;ctrl:nocaps,grp:alt_shift_toggle,grp_led:scroll&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Двойной &lt;code&gt;-option&lt;/code&gt; нужен, что бы стереть старые опции.
+Если указать только один &lt;code&gt;-option&lt;/code&gt;, то значения будут дописаны к существующим.&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>

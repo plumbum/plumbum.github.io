@@ -4,7 +4,7 @@ title = "Настройка раскладок клавиатуры"
 description = ""
 draft = false
 tags = ["Linux", "Keyboard", "X11"]
-topics = ["Linux"]
+topics = ["Linux", "Tips"]
 
 +++
 

@@ -1,16 +1,31 @@
 +++
-date = "2016-03-15T12:13:06+03:00"
+date = "2016-10-06T22:13:06+03:00"
 description = "Планы на будущее"
 draft = false
 tags = ["todo"]
 title = "ToDo"
 topics = []
-
 +++
 
-## [ ] Home Light Control
+Планы на будущее
 
-## [] ESP-Link 
+<!--more-->
+
+## [ ] Home Light Control (IoT)
+
+  * [ ] Идея
+  * [ ] Макет
+  * [ ] Прошивка
+  * [ ] PCB
+
+## [ ] Дверной звонок
+
+  * [ ] Идея
+  * [ ] Макет
+  * [ ] Прошивка
+  * [ ] PCB
+
+## [ ] ESP-Link 
 
   * [x] [Прошивка](/post/esp-link-flash)
   * [ ] Компиляция SDK https://github.com/pfalcon/esp-open-sdk
