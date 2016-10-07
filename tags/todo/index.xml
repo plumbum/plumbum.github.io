@@ -12,14 +12,32 @@
     <item>
       <title>ToDo</title>
       <link>http://myhw.ru/todo/</link>
-      <pubDate>Tue, 15 Mar 2016 12:13:06 +0300</pubDate>
+      <pubDate>Thu, 06 Oct 2016 22:13:06 +0300</pubDate>
       
       <guid>http://myhw.ru/todo/</guid>
-      <description>
+      <description>&lt;p&gt;Планы на будущее&lt;/p&gt;
 
-&lt;h2 id=&#34;home-light-control&#34;&gt;[ ] Home Light Control&lt;/h2&gt;
+&lt;p&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;esp-link&#34;&gt;[] ESP-Link&lt;/h2&gt;
+&lt;h2 id=&#34;home-light-control-iot&#34;&gt;[ ] Home Light Control (IoT)&lt;/h2&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Идея&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Макет&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Прошивка&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; PCB&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;дверной-звонок&#34;&gt;[ ] Дверной звонок&lt;/h2&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Идея&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Макет&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Прошивка&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; PCB&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;esp-link&#34;&gt;[ ] ESP-Link&lt;/h2&gt;
 
 &lt;ul class=&#34;task-list&#34;&gt;
 &lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; &lt;a href=&#34;http://myhw.ru/post/esp-link-flash&#34;&gt;Прошивка&lt;/a&gt;&lt;/li&gt;
@@ -80,8 +98,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;Что за зверь&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/ul&gt;</description>
     </item>
     
   </channel>

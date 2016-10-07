@@ -81,6 +81,98 @@
     </item>
     
     <item>
+      <title>ToDo</title>
+      <link>http://myhw.ru/todo/</link>
+      <pubDate>Thu, 06 Oct 2016 22:13:06 +0300</pubDate>
+      
+      <guid>http://myhw.ru/todo/</guid>
+      <description>&lt;p&gt;Планы на будущее&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;home-light-control-iot&#34;&gt;[ ] Home Light Control (IoT)&lt;/h2&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Идея&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Макет&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Прошивка&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; PCB&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;дверной-звонок&#34;&gt;[ ] Дверной звонок&lt;/h2&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Идея&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Макет&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Прошивка&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; PCB&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;esp-link&#34;&gt;[ ] ESP-Link&lt;/h2&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; &lt;a href=&#34;http://myhw.ru/post/esp-link-flash&#34;&gt;Прошивка&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Компиляция SDK &lt;a href=&#34;https://github.com/pfalcon/esp-open-sdk&#34;&gt;https://github.com/pfalcon/esp-open-sdk&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Компиляция кода &lt;a href=&#34;https://github.com/jeelabs/esp-link&#34;&gt;https://github.com/jeelabs/esp-link&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Демоплата&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Схема-плата переходника&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; STM32 программатор&lt;/li&gt;
+&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Android приложение&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;friendlyarm&#34;&gt;[ ] FriendlyARM&lt;/h2&gt;
+
+&lt;h3 id=&#34;прошивка&#34;&gt;[ ] Прошивка&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Установка U-boot&lt;/li&gt;
+&lt;li&gt;Установка ядра и минимальной системы&lt;/li&gt;
+&lt;li&gt;Конфигурирование сети&lt;/li&gt;
+&lt;li&gt;Telnet&lt;/li&gt;
+&lt;li&gt;SSH/FTP&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;разработка&#34;&gt;[ ] Разработка&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Установка тулчейна&lt;/li&gt;
+&lt;li&gt;Компиляция Hello world&lt;/li&gt;
+&lt;li&gt;Компиляция LUA&lt;/li&gt;
+&lt;li&gt;Установка QTE&lt;/li&gt;
+&lt;li&gt;Экранное приложение&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;nim&#34;&gt;[ ] Nim&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Установка Nim&lt;/li&gt;
+&lt;li&gt;Hello world&lt;/li&gt;
+&lt;li&gt;HTTP сервер&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;openwrt-роутер-и-openocd&#34;&gt;[ ] OpenWRT роутер и OpenOCD&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Установка&lt;/li&gt;
+&lt;li&gt;Сборка прошивки&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;nim-и-openwrt&#34;&gt;[ ] Nim и OpenWRT&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Тулчейн&lt;/li&gt;
+&lt;li&gt;Hello world&lt;/li&gt;
+&lt;li&gt;HTTP server&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;navspark-mini&#34;&gt;[ ] Navspark-mini&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Что за зверь&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
       <title>Консоль и терминал</title>
       <link>http://myhw.ru/post/terminal_tips/</link>
       <pubDate>Fri, 16 Sep 2016 12:15:00 +0300</pubDate>
@@ -244,81 +336,6 @@ options:    ctrl:nocaps,grp:alt_shift_toggle,grp_led:scroll
 
 &lt;p&gt;Двойной &lt;code&gt;-option&lt;/code&gt; нужен, что бы стереть старые опции.
 Если указать только один &lt;code&gt;-option&lt;/code&gt;, то значения будут дописаны к существующим.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>ToDo</title>
-      <link>http://myhw.ru/todo/</link>
-      <pubDate>Tue, 15 Mar 2016 12:13:06 +0300</pubDate>
-      
-      <guid>http://myhw.ru/todo/</guid>
-      <description>
-
-&lt;h2 id=&#34;home-light-control&#34;&gt;[ ] Home Light Control&lt;/h2&gt;
-
-&lt;h2 id=&#34;esp-link&#34;&gt;[] ESP-Link&lt;/h2&gt;
-
-&lt;ul class=&#34;task-list&#34;&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; &lt;a href=&#34;http://myhw.ru/post/esp-link-flash&#34;&gt;Прошивка&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Компиляция SDK &lt;a href=&#34;https://github.com/pfalcon/esp-open-sdk&#34;&gt;https://github.com/pfalcon/esp-open-sdk&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Компиляция кода &lt;a href=&#34;https://github.com/jeelabs/esp-link&#34;&gt;https://github.com/jeelabs/esp-link&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Демоплата&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Схема-плата переходника&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; STM32 программатор&lt;/li&gt;
-&lt;li&gt;&lt;input type=&#34;checkbox&#34; disabled class=&#34;task-list-item&#34;&gt; Android приложение&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;friendlyarm&#34;&gt;[ ] FriendlyARM&lt;/h2&gt;
-
-&lt;h3 id=&#34;прошивка&#34;&gt;[ ] Прошивка&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Установка U-boot&lt;/li&gt;
-&lt;li&gt;Установка ядра и минимальной системы&lt;/li&gt;
-&lt;li&gt;Конфигурирование сети&lt;/li&gt;
-&lt;li&gt;Telnet&lt;/li&gt;
-&lt;li&gt;SSH/FTP&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;разработка&#34;&gt;[ ] Разработка&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Установка тулчейна&lt;/li&gt;
-&lt;li&gt;Компиляция Hello world&lt;/li&gt;
-&lt;li&gt;Компиляция LUA&lt;/li&gt;
-&lt;li&gt;Установка QTE&lt;/li&gt;
-&lt;li&gt;Экранное приложение&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;nim&#34;&gt;[ ] Nim&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Установка Nim&lt;/li&gt;
-&lt;li&gt;Hello world&lt;/li&gt;
-&lt;li&gt;HTTP сервер&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;openwrt-роутер-и-openocd&#34;&gt;[ ] OpenWRT роутер и OpenOCD&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Установка&lt;/li&gt;
-&lt;li&gt;Сборка прошивки&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;nim-и-openwrt&#34;&gt;[ ] Nim и OpenWRT&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Тулчейн&lt;/li&gt;
-&lt;li&gt;Hello world&lt;/li&gt;
-&lt;li&gt;HTTP server&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;navspark-mini&#34;&gt;[ ] Navspark-mini&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Что за зверь&lt;/li&gt;
-&lt;/ul&gt;
-</description>
     </item>
     
     <item>
