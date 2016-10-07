@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My hardware</title>
+    <link>http://myhw.ru/topics/tips/index.xml</link>
+    <description>Recent content on My hardware</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <atom:link href="http://myhw.ru/topics/tips/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Символы Unicode</title>
+      <link>http://myhw.ru/post/unicode_signs/</link>
+      <pubDate>Fri, 07 Oct 2016 14:07:45 +0300</pubDate>
+      
+      <guid>http://myhw.ru/post/unicode_signs/</guid>
+      <description>&lt;p&gt;Подборка некоторых полезных символов из юникода.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Символ&lt;/th&gt;
+&lt;th&gt;Название&lt;/th&gt;
+&lt;th&gt;Код&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&amp;#x20BD;&lt;/td&gt;
+&lt;td&gt;Рубль. Знак валюты&lt;/td&gt;
+&lt;td&gt;U+20BD&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;#x2713;&lt;/td&gt;
+&lt;td&gt;Check mark&lt;/td&gt;
+&lt;td&gt;U+2713&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;#x2714;&lt;/td&gt;
+&lt;td&gt;Heavy check mark&lt;/td&gt;
+&lt;td&gt;U+2714&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;#x2705;&lt;/td&gt;
+&lt;td&gt;White heavy check mark&lt;/td&gt;
+&lt;td&gt;U+2705&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;#x237B;&lt;/td&gt;
+&lt;td&gt;Not check mark&lt;/td&gt;
+&lt;td&gt;U+237B&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;#x2610;&lt;/td&gt;
+&lt;td&gt;Ballot box&lt;/td&gt;
+&lt;td&gt;U+2610&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;&amp;#x2611;&lt;/td&gt;
+&lt;td&gt;Ballot box with check&lt;/td&gt;
+&lt;td&gt;U+2611&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Под X-сервером ввод символа с помощью его кода начинается комбинацией &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;U&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Вставить символ в HTML документ можно через апмперсанд последовательность.
+Например &amp;#x00A9; &lt;code&gt;&amp;amp;#x00A9;&lt;/code&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
