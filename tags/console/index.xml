@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My hardware</title>
+    <link>http://myhw.ru/tags/console/index.xml</link>
+    <description>Recent content on My hardware</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <atom:link href="http://myhw.ru/tags/console/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Консоль и терминал</title>
+      <link>http://myhw.ru/post/terminal_tips/</link>
+      <pubDate>Fri, 16 Sep 2016 12:15:00 +0300</pubDate>
+      
+      <guid>http://myhw.ru/post/terminal_tips/</guid>
+      <description>&lt;p&gt;Удобная работа в терминали Linux&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;клавиатурные-сочетания&#34;&gt;Клавиатурные сочетания&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Действие&lt;/th&gt;
+&lt;th&gt;Команда&lt;/th&gt;
+&lt;th&gt;Сочетание&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Начало строки&lt;/td&gt;
+&lt;td&gt;Home&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;a&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Конец строки&lt;/td&gt;
+&lt;td&gt;End&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;e&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Один символ вперед&lt;/td&gt;
+&lt;td&gt;Right Arrow&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;f&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Один символ назад&lt;/td&gt;
+&lt;td&gt;Left Arrow&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;b&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Удалить символ под курсором&lt;/td&gt;
+&lt;td&gt;Delete&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;d&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Удалить символ перед курсором&lt;/td&gt;
+&lt;td&gt;Backspace&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;h&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Предыдущая команда в истории&lt;/td&gt;
+&lt;td&gt;Up Arrow&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;p&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Следующая команда в истории&lt;/td&gt;
+&lt;td&gt;Down Arrow&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;n&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Ввод команды&lt;/td&gt;
+&lt;td&gt;Enter&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;j&lt;/code&gt; или &lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;m&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;На одно слово назад&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Meta&lt;/code&gt;-&lt;code&gt;b&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;На одно слово вперёд&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Meta&lt;/code&gt;-&lt;code&gt;f&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Вырезать предыдущее слово&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;w&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Вырезать все к концу строки&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;k&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Вырезать все к началу строки&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;u&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Вставить вырезанное ранее&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;y&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Откатить изменение&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;_&lt;/code&gt; (Ctrl+Shift+-)&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Очистить экран&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;l&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+
+&lt;tr&gt;
+&lt;td&gt;Поменять местами два символа&lt;/td&gt;
+&lt;td&gt;&lt;/td&gt;
+&lt;td&gt;&lt;code&gt;Ctrl&lt;/code&gt;-&lt;code&gt;t&lt;/code&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; &lt;code&gt;Ctrl-&lt;/code&gt; = hold control, &lt;code&gt;meta-&lt;/code&gt; = hold meta (where meta is usually the &lt;strong&gt;alt&lt;/strong&gt; or &lt;strong&gt;escape&lt;/strong&gt; key).&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://habrahabr.ru/post/266933/&#34;&gt;источник&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo on My hardware</title>
-    <link>http://myhw.ru/tags/hugo/</link>
-    <description>Recent content in Hugo on My hardware</description>
+    <title>My hardware</title>
+    <link>http://myhw.ru/tags/hugo/index.xml</link>
+    <description>Recent content on My hardware</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 16 Feb 2016 13:18:37 +0300</lastBuildDate>
     <atom:link href="http://myhw.ru/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -16,20 +15,28 @@
       <pubDate>Tue, 16 Feb 2016 13:18:37 +0300</pubDate>
       
       <guid>http://myhw.ru/post/hugo/</guid>
-      <description>&lt;p&gt;Hugo - генератор статичных сайтов подбный &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; написанный на &lt;a href=&#34;http://golang.org&#34;&gt;Go&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;Hugo - генератор статичных сайтов  подбный &lt;a href=&#34;https://jekyllrb.com&#34;&gt;Jekyll&lt;/a&gt; и написанный на языке программирования &lt;a href=&#34;http://golang.org&#34;&gt;Go&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;документация&#34;&gt;Документация&lt;/h2&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://gohugo.io/overview/installing/&#34;&gt;Установка&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://gohugo.io/overview/quickstart/&#34;&gt;Быстрый старт&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://gohugo.io/tutorials/github-pages-blog/&#34;&gt;Размещение на Github Pages&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;http://themes.gohugo.io/&#34;&gt;Темы оформления&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/templates/go-templates/&#34;&gt;Шаблоны страниц&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/templates/variables/&#34;&gt;Переменные шаблонов&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;p&gt;Для успешной работы надо ознакомится с &lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;markdown форматированием&lt;/a&gt;&lt;/p&gt;
 
+&lt;h2 id=&#34;подстветка&#34;&gt;Подстветка&lt;/h2&gt;
+
 &lt;p&gt;Hugo позволяет &lt;a href=&#34;https://gohugo.io/extras/highlighting/&#34;&gt;подсвечивать код&lt;/a&gt;&lt;/p&gt;
 
-&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #f92672&#34;&gt;package&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;main&lt;/span&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #272822&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span&gt;&lt;/span&gt;&lt;span style=&#34;color: #f92672&#34;&gt;package&lt;/span&gt; &lt;span style=&#34;color: #a6e22e&#34;&gt;main&lt;/span&gt;
 
 &lt;span style=&#34;color: #f92672&#34;&gt;import&lt;/span&gt; &lt;span style=&#34;color: #e6db74&#34;&gt;&amp;quot;fmt&amp;quot;&lt;/span&gt;
 
@@ -38,7 +45,10 @@
 &lt;span style=&#34;color: #f8f8f2&#34;&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 
-</description>
+
+&lt;h2 id=&#34;tips&#34;&gt;Tips&lt;/h2&gt;
+
+&lt;p&gt;Метатег &lt;code&gt;&amp;lt;!--more--&amp;gt;&lt;/code&gt; отрезает текст и вставляет ссылку &amp;ldquo;Read more&amp;rdquo;.&lt;/p&gt;</description>
     </item>
     
   </channel>

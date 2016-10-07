@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Stm32 on My hardware</title>
-    <link>http://myhw.ru/tags/stm32/</link>
-    <description>Recent content in Stm32 on My hardware</description>
+    <title>My hardware</title>
+    <link>http://myhw.ru/tags/stm32/index.xml</link>
+    <description>Recent content on My hardware</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Mon, 14 Mar 2016 11:25:34 +0300</lastBuildDate>
     <atom:link href="http://myhw.ru/tags/stm32/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -16,11 +15,11 @@
       <pubDate>Mon, 14 Mar 2016 11:25:34 +0300</pubDate>
       
       <guid>http://myhw.ru/post/emgo/</guid>
-      <description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/ziutek/emgo&#34;&gt;EmGo&lt;/a&gt; - язык для программирования микроконтроллеров с Go-синтаксисом.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/ziutek/emgo&#34;&gt;EmGo&lt;/a&gt; - язык для программирования микроконтроллеров с Go-синтаксисом.&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
 
-&lt;h2 id=&#34;установка:fedc21d604e755bf92c1c776b84b5952&#34;&gt;Установка&lt;/h2&gt;
+&lt;h2 id=&#34;установка&#34;&gt;Установка&lt;/h2&gt;
 
 &lt;p&gt;Для установки нам потребуется &lt;a href=&#34;https://golang.org/dl/&#34;&gt;Go версии 1.6+&lt;/a&gt;&lt;/p&gt;
 
@@ -60,7 +59,7 @@ sudo ln -s gcc-arm-none-eabi-5_2-2015q4 gcc-arm-none-eabi
 
 &lt;p&gt;Или можно использовать тулзу &lt;a href=&#34;https://github.com/texane/stlink&#34;&gt;StLink&lt;/a&gt;.&lt;/p&gt;
 
-&lt;h2 id=&#34;прошивка-тестового-примера:fedc21d604e755bf92c1c776b84b5952&#34;&gt;Прошивка тестового примера&lt;/h2&gt;
+&lt;h2 id=&#34;прошивка-тестового-примера&#34;&gt;Прошивка тестового примера&lt;/h2&gt;
 
 &lt;p&gt;После этого, можно отправится к примерам. Из коробки поддерживается демоборда &lt;code&gt;F4 Discovery&lt;/code&gt;, которая у меня была под рукоу.&lt;/p&gt;
 
@@ -91,10 +90,9 @@ sudo ln -s gcc-arm-none-eabi-5_2-2015q4 gcc-arm-none-eabi
 
 &lt;p&gt;Бинго! Плата начинает нам весело подмигивать всеми четырьмя светодиодами.&lt;/p&gt;
 
-&lt;h2 id=&#34;что-дальше:fedc21d604e755bf92c1c776b84b5952&#34;&gt;Что дальше?&lt;/h2&gt;
+&lt;h2 id=&#34;что-дальше&#34;&gt;Что дальше?&lt;/h2&gt;
 
-&lt;p&gt;Дальше изучать &lt;a href=&#34;https://github.com/ziutek/emgo/tree/master/egpath/src/stm32/examples&#34;&gt;примеры&lt;/a&gt;, читать &lt;a href=&#34;https://sites.google.com/site/embeddedgo/&#34;&gt;документацию&lt;/a&gt; (пока она весьма условна), писать собственные приложения.&lt;/p&gt;
-</description>
+&lt;p&gt;Дальше изучать &lt;a href=&#34;https://github.com/ziutek/emgo/tree/master/egpath/src/stm32/examples&#34;&gt;примеры&lt;/a&gt;, читать &lt;a href=&#34;https://sites.google.com/site/embeddedgo/&#34;&gt;документацию&lt;/a&gt; (пока она весьма условна), писать собственные приложения.&lt;/p&gt;</description>
     </item>
     
   </channel>

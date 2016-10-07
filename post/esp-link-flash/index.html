@@ -5,18 +5,19 @@
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Прошивка готовoй сборки ESP-Link">
-  <meta name="generator" content="Hugo 0.15-DEV" />
+  <meta name="generator" content="Hugo 0.17-DEV" />
 
   <title>Прошивка ESP-Link &middot; My hardware</title>
 
   
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
 
   <!--[if lte IE 8]>
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
   <![endif]-->
   <!--[if gt IE 8]><!-->
-  <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
   <!--<![endif]-->
 
   <!--[if lte IE 8]>
@@ -35,15 +36,20 @@
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
 
   
-  <link rel="alternate" type="application/rss+xml" title="My hardware" href="http://myhw.ru/index.xml" />
+  
 
   
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/androidstudio.min.css">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/solarized-light.min.css">
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
   
 
   <link rel="shortcut icon" href="http://myhw.ru/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://myhw.ru/css/extra.css">
+  
+  
 
 </head>
 
@@ -79,6 +85,18 @@
       
       
         <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://myhw.ru/topics/"><i class='fa fa-book fa-fw'></i>Topics</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://myhw.ru/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
           <a class="pure-menu-link" href="http://myhw.ru/todo/"><i class='fa fa-check-square-o fa-fw'></i>ToDo</a>
       
         </li>
@@ -101,20 +119,76 @@
   <div class="pure-menu social">
   <ul class="pure-menu-list">
 
-    <li class="pure-menu-item">
-      <a class="pure-menu-link" href="http://myhw.ru/index.xml"><i class="fa fa-rss fa-fw"></i>RSS</a>
-    </li>
-
-    
-
     
 
     
 
     
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href="https://github.com/plumbum" target="_blank"><i class="fa fa-github-alt fa-fw"></i>Github</a>
+      <a class="pure-menu-link" href="https://twitter.com/plumbum" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
     </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/208Pb" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/plumbum" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
     
 
     
@@ -124,11 +198,12 @@
   </ul>
 </div>
 
-  <div class="pure-g">
-  <div class="small-print pure-u-1 pure-u-md-1-1">
+
+  <div>
+  <div class="small-print">
     <small>&copy; 2016. All rights reserved.</small>
   </div>
-  <div class="small-print pure-u-1 pure-u-md-1-1">
+  <div class="small-print">
     <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
     <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
   </div>
@@ -158,6 +233,13 @@
   
   
   
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="http://myhw.ru/topics/electronics">Electronics</a>
+    
+  </div>
+  
   
 
   
@@ -184,10 +266,11 @@
 
 </div>
 
-  
+  <p><a href="https://github.com/jeelabs/esp-link">ESP-Link</a> - это WiFi-Serial мост на базе SoC ESP8266.</p>
 
-<p><a href="https://github.com/jeelabs/esp-link">ESP-Link</a> - это WiFi-Serial мост на базе SoC ESP8266.
-Кроме моста имеются дополнительные плюшки как то:</p>
+<p></p>
+
+<p>Кроме моста имеются дополнительные плюшки как то:</p>
 
 <ul>
 <li>Отправка REST запросов.</li>
@@ -202,7 +285,7 @@
 
 <p>В общем и целом, ограничений на типы модулей нет, ESP-Link успешно конфигурируется под разные GPIO через Web-интерфейс.</p>
 
-<h2 id="прошивка:82672e092b5545a43cc956b57c90b7a6">Прошивка</h2>
+<h2 id="прошивка">Прошивка</h2>
 
 <p>Для прошивки нам потребуется утилита <a href="https://github.com/themadinventor/esptool">ESPTool</a>.</p>
 
@@ -255,24 +338,37 @@ cd esp-link-v2.1.7
 <pre><code>./wiflash &lt;esp-hostname&gt; user1.bin user2.bin
 </code></pre>
 
-
   
 <div class="prev-next-post pure-g">
-  <div class="pure-u-1 pure-u-md-1-2">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://myhw.ru/post/emgo/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
     
     <nav class="prev">
-      <a href="http://myhw.ru/todo/"><i class="fa fa-arrow-circle-left fa-fw fa-lg"></i>ToDo</a>
+      <a href="http://myhw.ru/post/emgo/">EmGo</a>
     </nav>
     
   </div>
-  <div class="pure-u-1 pure-u-md-1-2">
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
     
     <nav class="next">
-      <a href="http://myhw.ru/post/emgo/">EmGo<i class="fa fa-arrow-circle-right fa-fw fa-lg"></i></a>
+      <a href="http://myhw.ru/post/keyboard_layout/">Настройка раскладок клавиатуры</a>
     </nav>
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+    <a href="http://myhw.ru/post/keyboard_layout/"><i class="fa fa-chevron-right"></i></a>
     
   </div>
 </div>
+
 
 
   

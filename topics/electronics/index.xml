@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My hardware</title>
+    <link>http://myhw.ru/topics/electronics/index.xml</link>
+    <description>Recent content on My hardware</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <atom:link href="http://myhw.ru/topics/electronics/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Прошивка ESP-Link</title>
+      <link>http://myhw.ru/post/esp-link-flash/</link>
+      <pubDate>Tue, 15 Mar 2016 11:59:38 +0300</pubDate>
+      
+      <guid>http://myhw.ru/post/esp-link-flash/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jeelabs/esp-link&#34;&gt;ESP-Link&lt;/a&gt; - это WiFi-Serial мост на базе SoC ESP8266.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Кроме моста имеются дополнительные плюшки как то:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Отправка REST запросов.&lt;/li&gt;
+&lt;li&gt;Клиент MQTT протокола.&lt;/li&gt;
+&lt;li&gt;Программатор AVR и LPC микроконтроллеров, а так же других модулей ESP8266 (по последовательному порту).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;В данный момент стабильной является прошивка версии &lt;a href=&#34;https://github.com/jeelabs/esp-link/releases/tag/v2.1.7&#34;&gt;2.1.7&lt;/a&gt;
+и самым простым вариантом установки будет взять собранные бинарные файлы и прошить их в модуль.&lt;/p&gt;
+
+&lt;p&gt;Поддерживаются как модули с 512 Кбайт флеш-памяти (например ESP-01, ESP-07) так и модули с 4 Мбайт флеш-памяти (например ESP-12).&lt;/p&gt;
+
+&lt;p&gt;В общем и целом, ограничений на типы модулей нет, ESP-Link успешно конфигурируется под разные GPIO через Web-интерфейс.&lt;/p&gt;
+
+&lt;h2 id=&#34;прошивка&#34;&gt;Прошивка&lt;/h2&gt;
+
+&lt;p&gt;Для прошивки нам потребуется утилита &lt;a href=&#34;https://github.com/themadinventor/esptool&#34;&gt;ESPTool&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Для себя я не стал её инсталлировать в систему, а просто скопировал &lt;a href=&#34;https://github.com/themadinventor/esptool/blob/master/esptool.py&#34;&gt;esptool.py&lt;/a&gt;
+в &lt;code&gt;~/bin&lt;/code&gt;, а библиотеку &lt;a href=&#34;https://github.com/pyserial/pyserial&#34;&gt;pyserial&lt;/a&gt; поставил через пакетный менеджер дистрибутива.&lt;/p&gt;
+
+&lt;p&gt;На &lt;a href=&#34;https://github.com/jeelabs/esp-link/releases&#34;&gt;странице релизов&lt;/a&gt; скачиваем
+последнюю &lt;a href=&#34;https://github.com/jeelabs/esp-link/releases/tag/v2.1.7&#34;&gt;стабильную прошивку&lt;/a&gt;
+или &lt;a href=&#34;https://github.com/jeelabs/esp-link/releases/tag/v2.2.beta2&#34;&gt;бету&lt;/a&gt;, если есть желание поэкспериментировать.&lt;/p&gt;
+
+&lt;p&gt;Распаковываем полученный файл:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tar xzvf esp-link-v2.1.7.tgz
+cd esp-link-v2.1.7
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Подключаем прошиваемый модуль к компьютеру через Usb-TTLSerial переходник. Следует помнить, что выходы TX-RX
+переходника должны выдавать напряжение от 0 до 3.3 вольт. Переходники с напряжением 5 вольт, могут безвозвратно
+повредить модуль.&lt;/p&gt;
+
+&lt;p&gt;Для нормальной работы модуля вывод &lt;code&gt;CH_PD&lt;/code&gt; должен быть подтянут к питанию через резистор 1-10 Ком,
+вывод &lt;code&gt;GPIO15&lt;/code&gt; должен быть подтянут к земле через резистор 1-10 Ком.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://myhw.ru/img/esp/ESP_min.png&#34; alt=&#34;ESP&#34; /&gt; &lt;a href=&#34;http://esp8266.github.io/Arduino/versions/2.1.0-rc2/doc/boards.html#minimal&#34;&gt;Minimal&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Для входа в режим программирования следует подтянуть выход &lt;code&gt;GPIO0&lt;/code&gt; к земле через резистор 1-10 Ком,
+и произвести сброс контроллера кратковременной подачей низкого уровня на вход &lt;code&gt;RESET&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;После этого модуль готов к прошивке.&lt;/p&gt;
+
+&lt;p&gt;Для версии с 4 Мбайтами флеш-памяти выполняем команду:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash -fs 32m -ff 80m \
+    0x00000 boot_v1.4\(b1\).bin 0x1000 user1.bin 0x3FE000 blank.bin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Для версии с 512 Кбайтами флеш-памяти выполняем команду:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;esptool.py --port /dev/ttyUSB0 --baud 460800 write_flash -fs 4m -ff 40m \
+    0x00000 boot_v1.4\(b1\).bin 0x1000 user1.bin 0x7E000 blank.bin
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Если возникли проблемы в процессе прошивки то можно попробовать снизить скорость обмена по последовательному порту &lt;code&gt;--baud 115200&lt;/code&gt;
+и/или скорость обмена с SPI-flash &lt;code&gt;-ff 20m&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;После успешной прошивки модуль доступен по сети WiFi как точка доступа.&lt;/p&gt;
+
+&lt;p&gt;Если ранее модуль уже был прошит как esp-link, то обновление прошивки можно провести по воздуху:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./wiflash &amp;lt;esp-hostname&amp;gt; user1.bin user2.bin
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>EmGo</title>
+      <link>http://myhw.ru/post/emgo/</link>
+      <pubDate>Mon, 14 Mar 2016 11:25:34 +0300</pubDate>
+      
+      <guid>http://myhw.ru/post/emgo/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/ziutek/emgo&#34;&gt;EmGo&lt;/a&gt; - язык для программирования микроконтроллеров с Go-синтаксисом.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;установка&#34;&gt;Установка&lt;/h2&gt;
+
+&lt;p&gt;Для установки нам потребуется &lt;a href=&#34;https://golang.org/dl/&#34;&gt;Go версии 1.6+&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Получаем код:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;go get -u -v github.com/ziutek/emgo
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Устанавливаем компилятор&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;go install -v github.com/ziutek/emgo/egc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Прописываем пременные окружения:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;export EGCC=/usr/local/arm/gcc-arm-none-eabi/bin/arm-none-eabi-gcc
+export EGLD=/usr/local/arm/gcc-arm-none-eabi/bin/arm-none-eabi-ld
+export EGAR=/usr/local/arm/gcc-arm-none-eabi/bin/arm-none-eabi-ar
+
+export EGROOT=$HOME/go/src/github.com/ziutek/emgo/egroot
+export EGPATH=$HOME/go/src/github.com/ziutek/emgo/egpath
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Для сборки бинарного файла egc использует gcc тулчейн. Можно взять например этот &lt;a href=&#34;https://launchpad.net/gcc-arm-embedded&#34;&gt;GCC ARM Embedded&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Я обычно распаковываю его как есть в &lt;code&gt;/usr/local/arm&lt;/code&gt; и делаю симлинк:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd /usr/local/arm
+sudo tar xvf ~/Downloads/gcc-arm-none-eabi-5_2-2015q4-20151219-linux.tar.bz2
+sudo ln -s gcc-arm-none-eabi-5_2-2015q4 gcc-arm-none-eabi
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Так же нужно установить &lt;code&gt;OpenOCD&lt;/code&gt;, если он ещё не установлен:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install openocd
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Или можно использовать тулзу &lt;a href=&#34;https://github.com/texane/stlink&#34;&gt;StLink&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;прошивка-тестового-примера&#34;&gt;Прошивка тестового примера&lt;/h2&gt;
+
+&lt;p&gt;После этого, можно отправится к примерам. Из коробки поддерживается демоборда &lt;code&gt;F4 Discovery&lt;/code&gt;, которая у меня была под рукоу.&lt;/p&gt;
+
+&lt;p&gt;Сразу возьмём что нибудь по-нагляднее &lt;del&gt;с блекджеком и&amp;hellip;&lt;/del&gt; т.е. с каналами и горутинами:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;cd $EGPATH/src/stm32/examples/f4-discovery/channels
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Мне не удалось запустить приложение из RAM, поэтому я отредактировал &lt;code&gt;script.ld&lt;/code&gt; и заменил строчку&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;INCLUDE stm32/loadram
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;на&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;INCLUDE stm32/loadflash
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Теперь собираем наше приложение:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;../build.sh
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Если копиляция прошла успешно, получили бинарник в elf-е &lt;code&gt;cortexm4f.elf&lt;/code&gt;. Прошиваем его в демоплату через OpenOCD:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;../load-oocd.sh flash
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Бинго! Плата начинает нам весело подмигивать всеми четырьмя светодиодами.&lt;/p&gt;
+
+&lt;h2 id=&#34;что-дальше&#34;&gt;Что дальше?&lt;/h2&gt;
+
+&lt;p&gt;Дальше изучать &lt;a href=&#34;https://github.com/ziutek/emgo/tree/master/egpath/src/stm32/examples&#34;&gt;примеры&lt;/a&gt;, читать &lt;a href=&#34;https://sites.google.com/site/embeddedgo/&#34;&gt;документацию&lt;/a&gt; (пока она весьма условна), писать собственные приложения.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Banana Pi</title>
+      <link>http://myhw.ru/post/bananaPi/</link>
+      <pubDate>Wed, 17 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://myhw.ru/post/bananaPi/</guid>
+      <description>&lt;p&gt;Banana Pi — семейство одноплатных компьютеров на базе микроконтроллеров с ядром ARM производства Allwinner.&lt;/p&gt;
+
+&lt;p&gt;Может работать под управлением различных операционных систем: Android 4.2, Android 4.4, Lubuntu, Raspbian, Debian, Fedora, Arch Linux, Gentoo, openSUSE, Berryboot, FreeBSD, OpenWrt, Slackware, Tiny Core Linux.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.armbian.com/banana-pi/&#34;&gt;http://www.armbian.com/banana-pi/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bananian.org/details&#34;&gt;https://www.bananian.org/details&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bananian.org/download&#34;&gt;https://www.bananian.org/download&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;user-define-led-green&#34;&gt;User-Define LED (Green)&lt;/h2&gt;
+
+&lt;p&gt;Управляем светодиодом через GPIO:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ echo gpio &amp;gt; /sys/class/leds/green\:ph24\:led1/trigger
+$ echo 255 &amp;gt; /sys/class/leds/green:ph24:led1/brightness # On
+$ echo 255 &amp;gt; /sys/class/leds/green:ph24:led1/brightness # Off
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Отключить триггер:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ echo none &amp;gt; /sys/class/leds/green\:ph24\:led1/trigger
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Посмотреть все доступные триггеры&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cat /sys/class/leds/green\:ph24\:led1/trigger
+none battery-charging-or-full battery-charging battery-charging-or-full
+battery-charging-blink-full-solid ac-online usb-online mmc0 timer
+heartbeat backlight [gpio] cpu0 cpu1 default-on
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

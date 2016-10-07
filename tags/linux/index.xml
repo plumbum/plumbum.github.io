@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My hardware</title>
+    <link>http://myhw.ru/tags/linux/index.xml</link>
+    <description>Recent content on My hardware</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <atom:link href="http://myhw.ru/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Настройка раскладок клавиатуры</title>
+      <link>http://myhw.ru/post/keyboard_layout/</link>
+      <pubDate>Tue, 14 Jun 2016 11:00:00 +0300</pubDate>
+      
+      <guid>http://myhw.ru/post/keyboard_layout/</guid>
+      <description>&lt;p&gt;Настройка раскладок клавиатуры&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;просмотр-текущих-опций&#34;&gt;Просмотр текущих опций&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;$ setxkbmap -query
+rules:      evdev
+model:      pc105
+layout:     us,ru
+variant:    ,
+options:    ctrl:nocaps,grp:alt_shift_toggle,grp_led:scroll
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;установка-новых-значений&#34;&gt;Установка новых значений&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;$ setxkbmap -option -option &amp;quot;ctrl:nocaps,grp:alt_shift_toggle,grp_led:scroll&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Двойной &lt;code&gt;-option&lt;/code&gt; нужен, что бы стереть старые опции.
+Если указать только один &lt;code&gt;-option&lt;/code&gt;, то значения будут дописаны к существующим.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Banana Pi</title>
+      <link>http://myhw.ru/post/bananaPi/</link>
+      <pubDate>Wed, 17 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://myhw.ru/post/bananaPi/</guid>
+      <description>&lt;p&gt;Banana Pi — семейство одноплатных компьютеров на базе микроконтроллеров с ядром ARM производства Allwinner.&lt;/p&gt;
+
+&lt;p&gt;Может работать под управлением различных операционных систем: Android 4.2, Android 4.4, Lubuntu, Raspbian, Debian, Fedora, Arch Linux, Gentoo, openSUSE, Berryboot, FreeBSD, OpenWrt, Slackware, Tiny Core Linux.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.armbian.com/banana-pi/&#34;&gt;http://www.armbian.com/banana-pi/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bananian.org/details&#34;&gt;https://www.bananian.org/details&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bananian.org/download&#34;&gt;https://www.bananian.org/download&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;user-define-led-green&#34;&gt;User-Define LED (Green)&lt;/h2&gt;
+
+&lt;p&gt;Управляем светодиодом через GPIO:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ echo gpio &amp;gt; /sys/class/leds/green\:ph24\:led1/trigger
+$ echo 255 &amp;gt; /sys/class/leds/green:ph24:led1/brightness # On
+$ echo 255 &amp;gt; /sys/class/leds/green:ph24:led1/brightness # Off
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Отключить триггер:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ echo none &amp;gt; /sys/class/leds/green\:ph24\:led1/trigger
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Посмотреть все доступные триггеры&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cat /sys/class/leds/green\:ph24\:led1/trigger
+none battery-charging-or-full battery-charging battery-charging-or-full
+battery-charging-blink-full-solid ac-online usb-online mmc0 timer
+heartbeat backlight [gpio] cpu0 cpu1 default-on
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

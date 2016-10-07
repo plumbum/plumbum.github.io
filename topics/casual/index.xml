@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My hardware</title>
+    <link>http://myhw.ru/topics/casual/index.xml</link>
+    <description>Recent content on My hardware</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <atom:link href="http://myhw.ru/topics/casual/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Первый пост</title>
+      <link>http://myhw.ru/post/first/</link>
+      <pubDate>Tue, 16 Feb 2016 13:08:46 +0300</pubDate>
+      
+      <guid>http://myhw.ru/post/first/</guid>
+      <description>&lt;p&gt;Традиционный первый &lt;del&gt;тост&lt;/del&gt; пост.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Я оставлю его здесь для истории, что бы запомнить момент, когда я начал использовать &lt;a href=&#34;http://myhw.ru/post/hugo&#34;&gt;Hugo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Раньше этого поста могут появляться и другие, если заметка была написана раньше по времени.&lt;/p&gt;
+
+&lt;p&gt;&lt;center&gt;
+&lt;img src=&#34;http://myhw.ru/img/hugo/rabbit.jpg&#34; alt=&#34; Funny Rabbit&#34; /&gt;
+&lt;/center&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
