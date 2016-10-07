@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My hardware</title>
+    <link>http://myhw.ru/tags/raspberry/index.xml</link>
+    <description>Recent content on My hardware</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <atom:link href="http://myhw.ru/tags/raspberry/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Banana Pi</title>
+      <link>http://myhw.ru/post/bananaPi/</link>
+      <pubDate>Wed, 17 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>http://myhw.ru/post/bananaPi/</guid>
+      <description>&lt;p&gt;Banana Pi — семейство одноплатных компьютеров на базе микроконтроллеров с ядром ARM производства Allwinner.&lt;/p&gt;
+
+&lt;p&gt;Может работать под управлением различных операционных систем: Android 4.2, Android 4.4, Lubuntu, Raspbian, Debian, Fedora, Arch Linux, Gentoo, openSUSE, Berryboot, FreeBSD, OpenWrt, Slackware, Tiny Core Linux.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;links&#34;&gt;Links&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.armbian.com/banana-pi/&#34;&gt;http://www.armbian.com/banana-pi/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bananian.org/details&#34;&gt;https://www.bananian.org/details&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.bananian.org/download&#34;&gt;https://www.bananian.org/download&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;user-define-led-green&#34;&gt;User-Define LED (Green)&lt;/h2&gt;
+
+&lt;p&gt;Управляем светодиодом через GPIO:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ echo gpio &amp;gt; /sys/class/leds/green\:ph24\:led1/trigger
+$ echo 255 &amp;gt; /sys/class/leds/green:ph24:led1/brightness # On
+$ echo 255 &amp;gt; /sys/class/leds/green:ph24:led1/brightness # Off
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Отключить триггер:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ echo none &amp;gt; /sys/class/leds/green\:ph24\:led1/trigger
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Посмотреть все доступные триггеры&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ cat /sys/class/leds/green\:ph24\:led1/trigger
+none battery-charging-or-full battery-charging battery-charging-or-full
+battery-charging-blink-full-solid ac-online usb-online mmc0 timer
+heartbeat backlight [gpio] cpu0 cpu1 default-on
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

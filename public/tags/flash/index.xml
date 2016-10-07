@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Flash on My hardware</title>
-    <link>http://myhw.ru/tags/flash/</link>
-    <description>Recent content in Flash on My hardware</description>
+    <title>My hardware</title>
+    <link>http://myhw.ru/tags/flash/index.xml</link>
+    <description>Recent content on My hardware</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Tue, 15 Mar 2016 11:59:38 +0300</lastBuildDate>
     <atom:link href="http://myhw.ru/tags/flash/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -16,10 +15,11 @@
       <pubDate>Tue, 15 Mar 2016 11:59:38 +0300</pubDate>
       
       <guid>http://myhw.ru/post/esp-link-flash/</guid>
-      <description>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jeelabs/esp-link&#34;&gt;ESP-Link&lt;/a&gt; - это WiFi-Serial мост на базе SoC ESP8266.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://github.com/jeelabs/esp-link&#34;&gt;ESP-Link&lt;/a&gt; - это WiFi-Serial мост на базе SoC ESP8266.
-Кроме моста имеются дополнительные плюшки как то:&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Кроме моста имеются дополнительные плюшки как то:&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Отправка REST запросов.&lt;/li&gt;
@@ -34,7 +34,7 @@
 
 &lt;p&gt;В общем и целом, ограничений на типы модулей нет, ESP-Link успешно конфигурируется под разные GPIO через Web-интерфейс.&lt;/p&gt;
 
-&lt;h2 id=&#34;прошивка:82672e092b5545a43cc956b57c90b7a6&#34;&gt;Прошивка&lt;/h2&gt;
+&lt;h2 id=&#34;прошивка&#34;&gt;Прошивка&lt;/h2&gt;
 
 &lt;p&gt;Для прошивки нам потребуется утилита &lt;a href=&#34;https://github.com/themadinventor/esptool&#34;&gt;ESPTool&lt;/a&gt;.&lt;/p&gt;
 
@@ -85,8 +85,7 @@ cd esp-link-v2.1.7
 &lt;p&gt;Если ранее модуль уже был прошит как esp-link, то обновление прошивки можно провести по воздуху:&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;./wiflash &amp;lt;esp-hostname&amp;gt; user1.bin user2.bin
-&lt;/code&gt;&lt;/pre&gt;
-</description>
+&lt;/code&gt;&lt;/pre&gt;</description>
     </item>
     
   </channel>

@@ -3,8 +3,17 @@
   
   <url>
     <loc>http://myhw.ru/</loc>
-    <lastmod>2016-03-15T12:13:06+03:00</lastmod>
-    <priority>0</priority>
+    <lastmod>2016-09-16T12:15:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://myhw.ru/post/terminal_tips/</loc>
+    <lastmod>2016-09-16T12:15:00+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://myhw.ru/post/keyboard_layout/</loc>
+    <lastmod>2016-06-14T11:00:00+03:00</lastmod>
   </url>
   
   <url>
@@ -20,6 +29,11 @@
   <url>
     <loc>http://myhw.ru/post/emgo/</loc>
     <lastmod>2016-03-14T11:25:34+03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://myhw.ru/post/bananaPi/</loc>
+    <lastmod>2016-02-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>

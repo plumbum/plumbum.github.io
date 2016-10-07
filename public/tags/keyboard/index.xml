@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My hardware</title>
+    <link>http://myhw.ru/tags/keyboard/index.xml</link>
+    <description>Recent content on My hardware</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ru</language>
+    <copyright>&amp;copy; 2016. All rights reserved.</copyright>
+    <atom:link href="http://myhw.ru/tags/keyboard/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Настройка раскладок клавиатуры</title>
+      <link>http://myhw.ru/post/keyboard_layout/</link>
+      <pubDate>Tue, 14 Jun 2016 11:00:00 +0300</pubDate>
+      
+      <guid>http://myhw.ru/post/keyboard_layout/</guid>
+      <description>&lt;p&gt;Настройка раскладок клавиатуры&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;просмотр-текущих-опций&#34;&gt;Просмотр текущих опций&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;$ setxkbmap -query
+rules:      evdev
+model:      pc105
+layout:     us,ru
+variant:    ,
+options:    ctrl:nocaps,grp:alt_shift_toggle,grp_led:scroll
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;установка-новых-значений&#34;&gt;Установка новых значений&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;$ setxkbmap -option -option &amp;quot;ctrl:nocaps,grp:alt_shift_toggle,grp_led:scroll&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Двойной &lt;code&gt;-option&lt;/code&gt; нужен, что бы стереть старые опции.
+Если указать только один &lt;code&gt;-option&lt;/code&gt;, то значения будут дописаны к существующим.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

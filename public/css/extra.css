@@ -1,0 +1,12 @@
+code {
+    border: 1px solid #3b8bba;
+    border-radius: 5px;
+    padding: 2px 4px;
+}
+
+table {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #a9a9a9;border-collapse: collapse;}
+table th {font-size:12px;background-color:#ccc;border-width: 1px;padding: 8px;border-style: solid;border-color: #a9a9a9;text-align:left;}
+table tr {}
+table td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #a9a9a9;}
+table tr:hover {background-color:#eee;}
+
