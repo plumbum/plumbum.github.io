@@ -458,19 +458,6 @@ heartbeat backlight [gpio] cpu0 cpu1 default-on
     </item>
     
     <item>
-      <title>Контактная информация</title>
-      <link>http://myhw.ru/contact/</link>
-      <pubDate>Tue, 16 Feb 2016 13:51:59 +0300</pubDate>
-      
-      <guid>http://myhw.ru/contact/</guid>
-      <description>&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://tuxotronic.org&#34;&gt;Открытая электроника&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://gowebgo.ru&#34;&gt;Заметки о Go&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Генератор сайтов Hugo</title>
       <link>http://myhw.ru/post/hugo/</link>
       <pubDate>Tue, 16 Feb 2016 13:18:37 +0300</pubDate>
@@ -537,7 +524,22 @@ heartbeat backlight [gpio] cpu0 cpu1 default-on
       <pubDate>Tue, 16 Feb 2016 12:39:22 +0300</pubDate>
       
       <guid>http://myhw.ru/about/</guid>
-      <description>&lt;p&gt;Небольшой сайт с заметками о железе&lt;/p&gt;
+      <description>
+
+&lt;p&gt;Небольшой сайт с заметками о железе.&lt;/p&gt;
+
+&lt;p&gt;Построен на статичном движке &lt;a href=&#34;http://myhw.ru/post/hugo&#34;&gt;Hugo&lt;/a&gt; и размещён на &lt;a href=&#34;https://pages.github.com/&#34;&gt;Github pages&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;другие-проекты&#34;&gt;Другие проекты&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://tuxotronic.org&#34;&gt;Открытая электроника&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://gowebgo.ru&#34;&gt;Заметки о Go&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;контакты&#34;&gt;Контакты&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;mail:myhw@tuxotronic.org&#34;&gt;Написать мне&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     

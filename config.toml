@@ -19,8 +19,9 @@ theme = "blackburn"
   googleAnalytics = "UA-502829-16"
   disqus = "myhw"
   # CSS name for highlight.js
-  highlightjs = "androidstudio"
+  highlightjs = "solarized-light"
   dateFormat = "02 Jan 2006, 15:04"
+  custom_css = ["css/extra.css"]
 
 [menu]
   # Shown in the side menu.
@@ -37,6 +38,18 @@ theme = "blackburn"
     identifier = "post"
     url = "/post/"
   [[menu.main]]
+    name = "Tags"
+    pre = "<i class='fa fa-tags fa-fw'></i>"
+    weight = 23
+    identifier = "tags"
+    url = "/tags/"
+  [[menu.main]]
+    name = "Topics"
+    pre = "<i class='fa fa-book fa-fw'></i>"
+    weight = 22
+    identifier = "topics"
+    url = "/topics/"
+  [[menu.main]]
     name = "ToDo"
     pre = "<i class='fa fa-check-square-o fa-fw'></i>"
     weight = 30
@@ -48,19 +61,19 @@ theme = "blackburn"
     weight = 40
     identifier = "about"
     url = "/about/"
-  [[menu.main]]
-    name = "Contact"
-    pre = "<i class='fa fa-phone fa-fw'></i>"
-    weight = 50
-    url = "/contact/"
+#  [[menu.main]]
+#    name = "Contact"
+#    pre = "<i class='fa fa-phone fa-fw'></i>"
+#    weight = 50
+#    url = "/contact/"
 
 [social]
   # Link your social networking accouns to the side menu
   # by entering your username or ID.
-  # twitter = "*"
-  # facebook = "*"
-  # instagram = "*"
   github = "plumbum"
+  twitter = "plumbum"
+  facebook = "208Pb"
+  # instagram = "*"
   # stackoverflow = "*"
   # linkedin = "*"
 
