@@ -10,6 +10,57 @@
     <atom:link href="http://myhw.ru/tags/arm/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Компилируем для ARM</title>
+      <link>http://myhw.ru/post/arm-none-eabi/</link>
+      <pubDate>Thu, 08 Dec 2016 10:21:32 +0300</pubDate>
+      
+      <guid>http://myhw.ru/post/arm-none-eabi/</guid>
+      <description>&lt;p&gt;Как известно, программный код на языке выского уровня сам в микроконтроллер не полезет,
+его требуется предварительно скомпилировать в машинный код
+(мы не берём интерпретируемые языки, но в этом случае в микроконтроллер должен быть уже прошит интерпретатор).
+Для микроконтроллеров на базе ядра ARM/Cortex можно воспользовать кросскопилятором &lt;code&gt;gcc-arm-none-eabi&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Магическое название компилятора &lt;code&gt;gcc-arm-none-eabi&lt;/code&gt; означает следующее:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;gcc&lt;/code&gt; - название компилятора;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;arm&lt;/code&gt; - архитектура процессора;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;none&lt;/code&gt; - компилятор не вносит никакого дополнительного bootstrap кода от себя;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;eabi&lt;/code&gt; - код соответствует спецификации &lt;a href=&#34;https://ru.wikipedia.org/wiki/%D0%94%D0%B2%D0%BE%D0%B8%D1%87%D0%BD%D1%8B%D0%B9_%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81_%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9&#34;&gt;EABI&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;gcc-arm-embedded&#34;&gt;GCC ARM Embedded&lt;/h2&gt;
+
+&lt;p&gt;Самый простой способ, это использовать готовые &lt;a href=&#34;https://launchpad.net/gcc-arm-embedded&#34;&gt;бинарные сборки&lt;/a&gt; для своей операционной системы. Доступны сборки для Linux, Mac, Windows.&lt;/p&gt;
+
+&lt;p&gt;Сборка уже все необходимые инструменты для компиляции ваших приложений а так же адаптированную для встраиваемых устройств стандартную библиотеку функция &lt;a href=&#34;https://sourceware.org/newlib/&#34;&gt;newlib&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;TODO как распаковать и прописать пути.&lt;/p&gt;
+
+&lt;h2 id=&#34;ubuntu&#34;&gt;Ubuntu&lt;/h2&gt;
+
+&lt;p&gt;Если у вас Ubuntu 12.04/14.04/15.&lt;sup&gt;10&lt;/sup&gt;&amp;frasl;&lt;sub&gt;16&lt;/sub&gt;.04 &lt;sup&gt;32&lt;/sup&gt;&amp;frasl;&lt;sub&gt;64&lt;/sub&gt;-bit, то вы можете воспользоваться &lt;a href=&#34;https://launchpad.net/~team-gcc-arm-embedded/+archive/ubuntu/ppa&#34;&gt;PPA репозиторием&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;debian&#34;&gt;Debian&lt;/h2&gt;
+
+&lt;p&gt;В свою очередь Debian начиная с Jessie содержит в своих репозиториях пакетов сборку &lt;code&gt;arm-none-eabi-gcc&lt;/code&gt;. Версии пакетов не самые свежие, но как правило вполне достаточные для работы.&lt;/p&gt;
+
+&lt;p&gt;Установить полный фарш можно командой:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install -t jessie-backports gcc-arm-none-eabi binutils-arm-none-eabi gdb-arm-none-eabi libnewlib-arm-none-eabi libnewlib-dev libstdc++-arm-none-eabi-newlib
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Дополнительно можно установить документацию по &lt;code&gt;newlib&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install -t jessie-backports libnewlib-doc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Обратите внимание на параметр &lt;code&gt;-t jessie-backports&lt;/code&gt;. В моём случае он означает, что пакеты необходимо устанавливать из репозитория &lt;a href=&#34;https://backports.debian.org/&#34;&gt;backports&lt;/a&gt;, там они новее, чем в stable версии.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>EmGo</title>
       <link>http://myhw.ru/post/emgo/</link>
       <pubDate>Mon, 14 Mar 2016 11:25:34 +0300</pubDate>
