@@ -7,8 +7,254 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <lastBuildDate>Fri, 07 Oct 2016 14:07:45 +0300</lastBuildDate>
+    <lastBuildDate>Thu, 08 Dec 2016 11:32:36 +0300</lastBuildDate>
     <atom:link href="http://myhw.ru/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>VS Code</title>
+      <link>http://myhw.ru/post/vscode-intro/</link>
+      <pubDate>Thu, 08 Dec 2016 11:32:36 +0300</pubDate>
+      
+      <guid>http://myhw.ru/post/vscode-intro/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Visual Studio Code&lt;/strong&gt; - мультиплатформенный редактор с открытым кодом от Microsoft на базе движка &lt;a href=&#34;http://electron.atom.io/&#34;&gt;Electron&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://myhw.ru/tags/vim&#34;&gt;Vim&lt;/a&gt; удобный и мощный &lt;a href=&#34;http://myhw.ru/tags/editor&#34;&gt;редактор&lt;/a&gt;, и во многих случаях он не заменим, например на отдалённом сервере, куда доступ есть только через консоль, и по медленному каналу.
+Но для повседневной разработки настроить его очень и очень не просто.&lt;/p&gt;
+
+&lt;p&gt;Я успешно вёл в нём разработку на &lt;a href=&#34;http://myhw.ru/tags/c&#34;&gt;C&lt;/a&gt;, который он хорошо поддерживает из коробки,
+в том числе автодополнение через &lt;a href=&#34;http://myhw.ru/tags/ctags&#34;&gt;ctags&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Так же удобно использовать &lt;em&gt;vim&lt;/em&gt; для разработки на &lt;a href=&#34;http://myhw.ru/tags/go&#34;&gt;Go&lt;/a&gt; благодаря &lt;a href=&#34;https://github.com/fatih/vim-go&#34;&gt;плагину Vim-Go&lt;/a&gt;,
+и собственному мощному инструментарию &lt;em&gt;Go&lt;/em&gt;. Но с прочими языками всё не так радужно.&lt;/p&gt;
+
+&lt;p&gt;Очень хороша &lt;a href=&#34;https://www.jetbrains.com/idea/download/&#34;&gt;IntelliJ IDEA&lt;/a&gt; и с хорошим vim-mode плагином, но это всё же мощная IDE и для мелких повседневных задач - стрельба из пушки по воробьям.
+Да и при использовании Communiti Edition накладывает много ограничений как на доступные языки (&lt;a href=&#34;http://myhw.ru/tags/java&#34;&gt;Java&lt;/a&gt;, &lt;a href=&#34;http://myhw.ru/tags/kotlin&#34;&gt;Kotlin&lt;/a&gt;, &lt;a href=&#34;http://myhw.ru/tags/go&#34;&gt;Go&lt;/a&gt;),
+так и на область применения ограниченную лицензией.&lt;/p&gt;
+
+&lt;p&gt;Так что уже долгое время я присматривал альтернативу для &lt;em&gt;Vim&lt;/em&gt;, когда начали появлятся редакторы на базе движка &lt;a href=&#34;http://electron.atom.io/&#34;&gt;Electron&lt;/a&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://atom.io/&#34;&gt;Atom&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://lighttable.com/&#34;&gt;LightTable&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;VSCode&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Atom на мой взгляд перегружен функционалом, и плагин для vim-mode в нём мягко говоря странный. Так я не нашел поддержки одной из основных vim-овских команд &lt;code&gt;:&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;LightTable сыроват, маленькое комьюнити соответственно мало расширений. Плагин для vim-mode тоже не без странностей и глюков. Не нашел поддержки &lt;code&gt;c/c++&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;В итоге остановился на VSCode. Тоже далеко не сразу, но редактор очень быстро развивается, и по сравнению с тем, что было год назад,
+когда пользоваться им можно было с большой натяжкой, сейчас он превратился в мощный и удобный инструмент.&lt;/p&gt;
+
+&lt;p&gt;Ключевые для меня моменты:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Поддержка &lt;code&gt;vim-mode&lt;/code&gt; &lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=vscodevim.vim&#34;&gt;сторонним плагином&lt;/a&gt; на высоте.
+При переключении между оригинальным Vim и VSCode с установленным плагином я не испытывал дискомфорта, когда внезапно попадаешь на отсутствующую команду.
+Некоторые неувязки исправляются конфигурационными файлами.&lt;/li&gt;
+&lt;li&gt;Удобное конфигурирование через &lt;code&gt;JSON&lt;/code&gt; файлы. Причём конфигурацию можно изменять как глобально, так и создать непосредственно для рабочей области.&lt;/li&gt;
+&lt;li&gt;Нет отдельных сущностей для проекта и/или рабочей области. Достаточно запустить &lt;code&gt;code .&lt;/code&gt; из консоли и текущая директория с поддиректориями считается рабочей областью.&lt;/li&gt;
+&lt;li&gt;Кроме собственно возможностей редактора &lt;code&gt;VSCode&lt;/code&gt; предоставляет возможности для интеграции с отладчиком и создания задач для сборки проектов.&lt;/li&gt;
+&lt;li&gt;Палитра команд с нечётким поиском. Т.е. для большинства действий не надо пользоваться мышью для поиска команды в меню или вспоминать точное название команды.
+Достаточно нажать &lt;code&gt;Ctrl+P &amp;gt;&lt;/code&gt; (или &lt;code&gt;Ctrl+Shift+P&lt;/code&gt;, или &lt;code&gt;F1&lt;/code&gt;) и начать писать одно или несколько слов команды или её описания.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;установка&#34;&gt;Установка&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://code.visualstudio.com/Download&#34;&gt;Качаем пакет для вашей операционки&lt;/a&gt;.
+Для противников пакетных менеджеров и инсталляторов есть сборки в архивах.&lt;/p&gt;
+
+&lt;p&gt;Я использовал пакет для &lt;strong&gt;Debian&lt;/strong&gt; и установил его через &lt;code&gt;sudo dpkg -i code_1.7.2-1479766213_amd64.deb&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Теперь можем запустить редактор &lt;code&gt;code&lt;/code&gt;. Видим минималистичный интерфейс.&lt;/p&gt;
+
+&lt;p&gt;Теперь установим поддержку &lt;code&gt;vim-mode&lt;/code&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Нажимаем &lt;code&gt;Ctrl+P&lt;/code&gt; для вызова поля ввода действий,&lt;/li&gt;
+&lt;li&gt;вводим &lt;code&gt;ext install vim&lt;/code&gt; &lt;code&gt;Enter&lt;/code&gt; для поиска расширений.&lt;/li&gt;
+&lt;li&gt;И устанавливаем &lt;strong&gt;Vim&lt;/strong&gt; от &lt;a href=&#34;https://marketplace.visualstudio.com/items?itemName=vscodevim.vim&#34;&gt;vscodevim&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Собственно до этого момента я набирал этот текст в оригинальном vim, теперь переключился в VSCode.&lt;/p&gt;
+
+&lt;h2 id=&#34;темы&#34;&gt;Темы&lt;/h2&gt;
+
+&lt;p&gt;Изменить тему интерфейса включая синтаксис (о чудо, теперь не будет тёмного окна редактора кода со светлыми элементами вокруг),
+а так же тему значков файлов можно как через меню &lt;code&gt;Файл/Параметры&lt;/code&gt; так и через палитру команд.&lt;/p&gt;
+
+&lt;p&gt;Нажимаем &lt;code&gt;F1&lt;/code&gt; (или &lt;code&gt;Ctrl+Shift+P&lt;/code&gt;) и начинаем вводить &lt;code&gt;color theme&lt;/code&gt; или &lt;code&gt;icon theme&lt;/code&gt;. Как нужная команда останется у нас на первом месте можно сразу жать &lt;code&gt;Enter&lt;/code&gt;, что бы выполнить её.
+Так же нужную команду можно выбрать стрелками вверх-вниз, но это лишнее движение правой рукой ;-)&lt;/p&gt;
+
+&lt;h2 id=&#34;настройки&#34;&gt;Настройки&lt;/h2&gt;
+
+&lt;p&gt;Если какое-то поведение среды вас не устраивает, то его можно почти наверняка изменить настройками.&lt;/p&gt;
+
+&lt;p&gt;Например, по умолчанию используется шрифт &lt;code&gt;Droid Sans Mono&lt;/code&gt;.
+Он сам по себе не плох, но мне больше нравится &lt;a href=&#34;http://input.fontbureau.com/&#34;&gt;Input&lt;/a&gt; да и размер настроить не мешает.&lt;/p&gt;
+
+&lt;p&gt;Открыть файл настроек можно через меню или через палитру команд.&lt;/p&gt;
+
+&lt;p&gt;Нажимаем &lt;code&gt;F1&lt;/code&gt;, начинаем набирать &lt;code&gt;user settings&lt;/code&gt; и как видим, что достигли нужного пункта жмём &lt;code&gt;Enter&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Рабочая область автоматом разбивается на две группы, в левой настройки по умолчанию,
+в правой редактор с файлом settings.json настроек пользователя.&lt;/p&gt;
+
+&lt;p&gt;Копируем интересующие нас настройки слева на право и редактируем их по своему вкусу.&lt;/p&gt;
+
+&lt;p&gt;У меня в итоге получился такой файл:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;// settings.json
+{
+    &amp;quot;editor.fontFamily&amp;quot;: &amp;quot;&#39;Input&#39;, &#39;Droid Sans Mono&#39;, &#39;Courier New&#39;, monospace, &#39;Droid Sans Fallback&#39;&amp;quot;,
+    &amp;quot;editor.fontSize&amp;quot;: 12,
+    &amp;quot;editor.rulers&amp;quot;: [80, 120],
+
+    &amp;quot;files.exclude&amp;quot;: {
+        &amp;quot;**/.git&amp;quot;: true,
+        &amp;quot;**/.svn&amp;quot;: true,
+        &amp;quot;**/.hg&amp;quot;: true,
+        &amp;quot;**/.DS_Store&amp;quot;: true,
+        &amp;quot;**/.*.swp&amp;quot;: true
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Аналогично можно поменять настройки рабочей области:
+Нажимаем &lt;code&gt;F1&lt;/code&gt;, начинаем набирать &lt;code&gt;workspace settings&lt;/code&gt; и как видим, что достигли нужного пункта жмём &lt;code&gt;Enter&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Следует отметить, что настройки вступают в силу сразу после сохранения файла.&lt;/p&gt;
+
+&lt;p&gt;Настроить язык среды так же можно через конфигурационные файлы. Ну мало ли вам не нравится русский интерфейс?&lt;/p&gt;
+
+&lt;p&gt;Нажимаем &lt;code&gt;F1&lt;/code&gt;, начинаем набирать &lt;code&gt;conf lang&lt;/code&gt; и как видим, что достигли нужного пункта жмём &lt;code&gt;Enter&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;В открывшемся файле указываем указываем для параметра &lt;code&gt;locale&lt;/code&gt; код языка.
+Для должного эффекта в этом случае придётся перезапустить VSCode.&lt;/p&gt;
+
+&lt;p&gt;Внимательный читатель, конечно обратил внимание, что для редактирования языка я написал &lt;code&gt;conf lang&lt;/code&gt; вместо полного &lt;code&gt;configure language&lt;/code&gt;.
+Но это не ошибка, а невероятно удобная фича нечёткого поиска.
+Можно набирать &lt;code&gt;conflang&lt;/code&gt; или даже &lt;code&gt;cola&lt;/code&gt; и всё равно нужна команда будет найдена.&lt;/p&gt;
+
+&lt;p&gt;Да, если вы оставили VSCode на русском языке, то &lt;code&gt;F1&lt;/code&gt; &lt;code&gt;настряз&lt;/code&gt; &lt;code&gt;Enter&lt;/code&gt; тоже сработает.&lt;/p&gt;
+
+&lt;p&gt;Так что не зря палитра команд назначена так же на клавишу &lt;code&gt;F1&lt;/code&gt; по сути это мини-помощь с поиском.&lt;/p&gt;
+
+&lt;h2 id=&#34;клавиатурные-комбинации&#34;&gt;Клавиатурные комбинации&lt;/h2&gt;
+
+&lt;p&gt;Поменять сочетания клавиш для вызова той или иной команды может потребоваться по разным причинам:
+комбинация не устраивает, отсутствует, или как в моём случае переопределена расширением &lt;strong&gt;vim&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Нажимаем &lt;code&gt;F1&lt;/code&gt;, начинаем набирать &lt;code&gt;keyboard shortcut&lt;/code&gt; и как видим, что достигли нужного пункта жмём &lt;code&gt;Enter&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Как и для настроек окно будет разбито на две панели со списком существующих комбинаций (с учётом определённых плагинами).
+В конце списка существующих комбинаций приведены команды, на которые не назначены шорткаты.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-json&#34;&gt;// keybinding.json
+[
+
+// Показать информацию по идентификатору
+    { &amp;quot;key&amp;quot;: &amp;quot;ctrl+i&amp;quot;,
+        &amp;quot;command&amp;quot;: &amp;quot;editor.action.previewDeclaration&amp;quot;,
+        &amp;quot;when&amp;quot;: &amp;quot;editorHasDefinitionProvider &amp;amp;&amp;amp; editorTextFocus &amp;amp;&amp;amp; !inReferenceSearchEditor&amp;quot; },
+    { &amp;quot;key&amp;quot;: &amp;quot;shift+f6&amp;quot;,
+        &amp;quot;command&amp;quot;: &amp;quot;editor.action.rename&amp;quot;,
+        &amp;quot;when&amp;quot;: &amp;quot;editorHasRenameProvider &amp;amp;&amp;amp; editorTextFocus &amp;amp;&amp;amp; !editorReadonly&amp;quot; },
+
+// Показать/скрыть боковую панель
+    { &amp;quot;key&amp;quot;: &amp;quot;f3&amp;quot;, &amp;quot;command&amp;quot;: &amp;quot;workbench.action.toggleSidebarVisibility&amp;quot; },
+// Показать/скрыть панель (fix vim)
+    { &amp;quot;key&amp;quot;: &amp;quot;ctrl+j&amp;quot;, &amp;quot;command&amp;quot;: &amp;quot;workbench.action.togglePanel&amp;quot; },
+    
+    
+// Перемещение между редакторами
+    { &amp;quot;key&amp;quot;: &amp;quot;ctrl+l&amp;quot;,
+        &amp;quot;command&amp;quot;: &amp;quot;workbench.action.focusNextGroup&amp;quot; },
+    { &amp;quot;key&amp;quot;: &amp;quot;ctrl+h&amp;quot;,
+        &amp;quot;command&amp;quot;: &amp;quot;workbench.action.focusPreviousGroup&amp;quot; },
+    { &amp;quot;key&amp;quot;: &amp;quot;alt+l&amp;quot;,
+        &amp;quot;command&amp;quot;: &amp;quot;workbench.action.nextEditor&amp;quot; },
+    { &amp;quot;key&amp;quot;: &amp;quot;alt+h&amp;quot;,
+        &amp;quot;command&amp;quot;: &amp;quot;workbench.action.previousEditor&amp;quot; },
+    { &amp;quot;key&amp;quot;: &amp;quot;alt+right&amp;quot;,
+        &amp;quot;command&amp;quot;: &amp;quot;workbench.action.nextEditor&amp;quot; },
+    { &amp;quot;key&amp;quot;: &amp;quot;alt+left&amp;quot;,
+        &amp;quot;command&amp;quot;: &amp;quot;workbench.action.previousEditor&amp;quot; },
+    { &amp;quot;key&amp;quot;: &amp;quot;ctrl+f4&amp;quot;,
+        &amp;quot;command&amp;quot;: &amp;quot;workbench.action.closeActiveEditor&amp;quot; },
+
+// Запуск задач
+    { &amp;quot;key&amp;quot;: &amp;quot;f8&amp;quot;,
+        &amp;quot;command&amp;quot;: &amp;quot;workbench.action.tasks.build&amp;quot; },
+    { &amp;quot;key&amp;quot;: &amp;quot;ctrl+f8&amp;quot;,
+        &amp;quot;command&amp;quot;: &amp;quot;workbench.action.tasks.runTask&amp;quot;
+    },
+// Vim correction
+    { &amp;quot;key&amp;quot;: &amp;quot;ctrl+]&amp;quot;,
+        &amp;quot;command&amp;quot;: &amp;quot;editor.action.goToDeclaration&amp;quot;,
+        &amp;quot;when&amp;quot;: &amp;quot;editorHasDefinitionProvider &amp;amp;&amp;amp; editorTextFocus&amp;quot; },
+    { &amp;quot;key&amp;quot;: &amp;quot;ctrl+t&amp;quot;,
+        &amp;quot;command&amp;quot;: &amp;quot;workbench.action.navigateBack&amp;quot; },
+
+    { &amp;quot;key&amp;quot;: &amp;quot;ctrl+w n&amp;quot;, &amp;quot;command&amp;quot;: &amp;quot;workbench.action.files.newUntitledFile&amp;quot; },
+    { &amp;quot;key&amp;quot;: &amp;quot;ctrl+w c&amp;quot;, &amp;quot;command&amp;quot;: &amp;quot;workbench.action.closeActiveEditor&amp;quot; }
+
+]
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    
+    <item>
+      <title>Компилируем для ARM</title>
+      <link>http://myhw.ru/post/arm-none-eabi/</link>
+      <pubDate>Thu, 08 Dec 2016 10:21:32 +0300</pubDate>
+      
+      <guid>http://myhw.ru/post/arm-none-eabi/</guid>
+      <description>&lt;p&gt;Как известно, программный код на языке выского уровня сам в микроконтроллер не полезет,
+его требуется предварительно скомпилировать в машинный код
+(мы не берём интерпретируемые языки, но в этом случае в микроконтроллер должен быть уже прошит интерпретатор).
+Для микроконтроллеров на базе ядра ARM/Cortex можно воспользовать кросскопилятором &lt;code&gt;gcc-arm-none-eabi&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Магическое название компилятора &lt;code&gt;gcc-arm-none-eabi&lt;/code&gt; означает следующее:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;gcc&lt;/code&gt; - название компилятора;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;arm&lt;/code&gt; - архитектура процессора;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;none&lt;/code&gt; - компилятор не вносит никакого дополнительного bootstrap кода от себя;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;eabi&lt;/code&gt; - код соответствует спецификации &lt;a href=&#34;https://ru.wikipedia.org/wiki/%D0%94%D0%B2%D0%BE%D0%B8%D1%87%D0%BD%D1%8B%D0%B9_%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D1%84%D0%B5%D0%B9%D1%81_%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9&#34;&gt;EABI&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;gcc-arm-embedded&#34;&gt;GCC ARM Embedded&lt;/h2&gt;
+
+&lt;p&gt;Самый простой способ, это использовать готовые &lt;a href=&#34;https://launchpad.net/gcc-arm-embedded&#34;&gt;бинарные сборки&lt;/a&gt; для своей операционной системы. Доступны сборки для Linux, Mac, Windows.&lt;/p&gt;
+
+&lt;p&gt;Сборка уже все необходимые инструменты для компиляции ваших приложений а так же адаптированную для встраиваемых устройств стандартную библиотеку функция &lt;a href=&#34;https://sourceware.org/newlib/&#34;&gt;newlib&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;TODO как распаковать и прописать пути.&lt;/p&gt;
+
+&lt;h2 id=&#34;ubuntu&#34;&gt;Ubuntu&lt;/h2&gt;
+
+&lt;p&gt;Если у вас Ubuntu 12.04/14.04/15.&lt;sup&gt;10&lt;/sup&gt;&amp;frasl;&lt;sub&gt;16&lt;/sub&gt;.04 &lt;sup&gt;32&lt;/sup&gt;&amp;frasl;&lt;sub&gt;64&lt;/sub&gt;-bit, то вы можете воспользоваться &lt;a href=&#34;https://launchpad.net/~team-gcc-arm-embedded/+archive/ubuntu/ppa&#34;&gt;PPA репозиторием&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;debian&#34;&gt;Debian&lt;/h2&gt;
+
+&lt;p&gt;В свою очередь Debian начиная с Jessie содержит в своих репозиториях пакетов сборку &lt;code&gt;arm-none-eabi-gcc&lt;/code&gt;. Версии пакетов не самые свежие, но как правило вполне достаточные для работы.&lt;/p&gt;
+
+&lt;p&gt;Установить полный фарш можно командой:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install -t jessie-backports gcc-arm-none-eabi binutils-arm-none-eabi gdb-arm-none-eabi libnewlib-arm-none-eabi libnewlib-dev libstdc++-arm-none-eabi-newlib
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Дополнительно можно установить документацию по &lt;code&gt;newlib&lt;/code&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sudo apt-get install -t jessie-backports libnewlib-doc
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Обратите внимание на параметр &lt;code&gt;-t jessie-backports&lt;/code&gt;. В моём случае он означает, что пакеты необходимо устанавливать из репозитория &lt;a href=&#34;https://backports.debian.org/&#34;&gt;backports&lt;/a&gt;, там они новее, чем в stable версии.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Символы Unicode</title>
