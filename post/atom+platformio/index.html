@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Установка и настройка">
+  <meta name="generator" content="Hugo 0.17" />
+
+  <title>Atom&#43;PlatformIO &middot; My hardware</title>
+
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/pure-min.css">
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-old-ie-min.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/0.6.0/grids-responsive-min.css">
+  <!--<![endif]-->
+
+  <!--[if lte IE 8]>
+  <link rel="stylesheet" href="http://myhw.ru/css/side-menu-old-ie.css">
+  <![endif]-->
+  <!--[if gt IE 8]><!-->
+  <link rel="stylesheet" href="http://myhw.ru/css/side-menu.css">
+  <!--<![endif]-->
+
+  <link rel="stylesheet" href="http://myhw.ru/css/blackburn.css">
+
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+  
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+
+  
+  
+
+  
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/solarized-light.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  
+
+  <link rel="shortcut icon" href="http://myhw.ru/img/favicon.ico" type="image/x-icon" />
+
+  
+    <link rel="stylesheet" href="http://myhw.ru/css/extra.css">
+  
+  
+
+</head>
+
+
+<body>
+<div id="layout">
+
+  
+<a href="#menu" id="menuLink" class="menu-link">
+  
+  <span></span>
+</a>
+<div id="menu">
+
+  
+  <a class="pure-menu-heading brand" href="http://myhw.ru/">My hardware</a>
+
+
+  <div class="pure-menu">
+    <ul class="pure-menu-list">
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://myhw.ru/"><i class='fa fa-home fa-fw'></i>Home</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://myhw.ru/post/"><i class='fa fa-list fa-fw'></i>Posts</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://myhw.ru/topics/"><i class='fa fa-book fa-fw'></i>Topics</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://myhw.ru/tags/"><i class='fa fa-tags fa-fw'></i>Tags</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://myhw.ru/todo/"><i class='fa fa-check-square-o fa-fw'></i>ToDo</a>
+      
+        </li>
+      
+      
+        <li class="pure-menu-item">
+          <a class="pure-menu-link" href="http://myhw.ru/about/"><i class='fa fa-user fa-fw'></i>About</a>
+      
+        </li>
+      
+    </ul>
+  </div>
+
+  <div class="pure-menu social">
+  <ul class="pure-menu-list">
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://twitter.com/plumbum" target="_blank"><i class="fa fa-twitter-square fa-fw"></i>Twitter</a>
+    </li>
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://facebook.com/208Pb" target="_blank"><i class="fa fa-facebook-square fa-fw"></i>Facebook</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="https://github.com/plumbum" target="_blank"><i class="fa fa-github-square fa-fw"></i>GitHub</a>
+    </li>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+  </ul>
+</div>
+
+
+  <div>
+  <div class="small-print">
+    <small>&copy; 2016. All rights reserved.</small>
+  </div>
+  <div class="small-print">
+    <small>Built with&nbsp;<a href="https://gohugo.io/" target="_blank">Hugo</a></small>
+    <small>Theme&nbsp;<a href="https://github.com/yoshiharuyamashita/blackburn" target="_blank">Blackburn</a></small>
+  </div>
+</div>
+
+</div>
+
+
+  <div id="main">
+
+
+<div class="header">
+  <h1>Atom&#43;PlatformIO</h1>
+  <h2>Установка и настройка</h2>
+</div>
+<div class="content">
+
+  <div class="post-meta">
+
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>26 Dec 2016, 22:28</time>
+  </div>
+
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-folder fa-fw"></i>
+    
+      <a class="post-taxonomy-topic" href="http://myhw.ru/topics/development">Development</a>
+    
+  </div>
+  
+  
+
+  
+  
+  
+  <div>
+    <i class="fa fa-tags fa-fw"></i>
+    
+      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/electronis">Electronis</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/development">Development</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/ide">IDE</a>&nbsp;&#47;
+    
+      <a class="post-taxonomy-tag" href="http://myhw.ru/tags/editor">Editor</a>
+    
+  </div>
+  
+  
+
+</div>
+
+  <p>Среду разработки для Arduino сложно назвать полноценной средой разработки
+по соверменным меркам. Хотя она и содержит в своём составе средства
+для управления библиотеками и платформами используемый в ней редактор исходных
+кодов очень слаб, да и управление проектами по сути отсутствует.</p>
+
+<p>На выручку нам приходит <a href="http://platformio.org/">PlatformIO</a>.</p>
+
+<p></p>
+
+<p>По сути это набор утилит командной строки позволяющих управлять проектами,
+библиотеками, сборкой и деплоем в готовые устройства.</p>
+
+<p>Для удобной работы с исходным кодом среда может быть интегрирована в различные
+редакторы и IDE, а на базе редактора <a href="https://atom.io/">Atom</a> создана
+собственная <a href="http://platformio.org/platformio-ide">IDE</a>.</p>
+
+<p>На самом деле в <em>Atom</em> среда интегрируется посредством пакета, так что
+тот же самый функционал можно получить не ставя <em>PlatformIO IDE</em>, а установив
+нужный пакет в <em>Atom</em>.</p>
+
+<p>На мой взгляд вариант с установкой пакета имеет то преимущество, что версии
+оригинального <em>Atom</em> новее версий <em>Atom-а</em> входящего в состав <em>PlatformIO IDE</em>.</p>
+
+<h2 id="atom">Atom</h2>
+
+<p>Ставим редактор <a href="https://atom.io/">Atom</a>.</p>
+
+<p>Тут никаких сложностей, просто качаем и устанавливаем пакет для своей системы.</p>
+
+<p><img src="https://ipfs.io/ipfs/QmagXg7Y11R1dPbtXby3W1tYSddkAudHKwfQ12rUqH6hSU/atom_welcome.png" alt="Welcome atom" /></p>
+
+<h2 id="vim-mode">Vim mode</h2>
+
+<p>Для vim-еров ставим <a href="https://atom.io/packages/vim-mode-plus">Vim mode plus</a>.</p>
+
+<p>&hellip;и дополнительно пакет для поддержки минимального набора ex (<code>:</code>) команд <a href="https://atom.io/packages/vim-mode-plus-ex-mode">ex mode</a>.</p>
+
+<p>Не забудьте прописать keymap:</p>
+
+<pre><code>'atom-text-editor.vim-mode-plus.normal-mode':
+  ':': 'vim-mode-plus-ex-mode:open'
+  '!': 'vim-mode-plus-ex-mode:toggle-setting'
+</code></pre>
+
+<p>Пакет не реализует весь функционал оригинального <em>vim</em>, но вполне достаточный,
+что-бы чувствовать себя комфортно.</p>
+
+<p><img src="https://ipfs.io/ipfs/QmagXg7Y11R1dPbtXby3W1tYSddkAudHKwfQ12rUqH6hSU/install_vim_mode.png" alt="Install vim mode" /></p>
+
+<h2 id="оформление">Оформление</h2>
+
+<p>На мой взгляд тема <em>Atom-a</em> резковата.</p>
+
+<p>Мне нравится тема <a href="https://atom.io/themes/lucius-dark-syntax">Lucius dark</a>,</p>
+
+<p>И моноширный шрифт <a href="http://input.fontbureau.com/">Input</a>.
+На сайте можно поиграться и собрать шрифт под себя.</p>
+
+<h2 id="platformio">PlatformIO</h2>
+
+<p>Ставим пакет <a href="https://atom.io/packages/platformio-ide">PlatformIO IDE</a>.</p>
+
+<p>Ставим пакет терминала <a href="https://atom.io/packages/platformio-ide-terminal">PlatformIO IDE terminal</a>.</p>
+
+<p>PlatformIO IDE предоставляет:</p>
+
+<ul>
+<li>поддержку большого количества плат, платформ и фреймворков.</li>
+<li>Автозавершение кода.</li>
+<li>Проверку кода на лету.</li>
+<li>Управление библиотеками.</li>
+<li>Работа с несколькими проектами.</li>
+<li>Монитор последовательного порта.</li>
+</ul>
+
+<p>После перезапуска <em>Atom</em> видим экран приглашения <em>PlatformIO</em> с быстрым доступом
+к некоторым командам среды.</p>
+
+<p><img src="https://ipfs.io/ipfs/QmTm9ig4B5gCBe8B6yHZAMTN7tCqydy7r8VKAiDqvD9Zox/platformio_home.png" alt="Home screen" /></p>
+
+<p>Его можно отключить сняв галку <code>Show PlatformIO Home screen</code></p>
+
+<h2 id="переход-к-определению-символа">Переход к определению символа</h2>
+
+<p>Тут не всё так гладко. Для автокомплита PlatformIO IDE использует пакет <a href="https://atom.io/packages/autocomplete-clang">autocomplete clang</a>.</p>
+
+<p>Он умеет кроме автокомплита переходить к определению символа, а вот возвращаться обратно не умеет (или я не нашел?)</p>
+
+<p>Я переопределил переход на клавишу <code>F12</code>.</p>
+
+<pre><code>'.workspace':
+  'f12': 'autocomplete-clang:go-declaration'
+</code></pre>
+
+<p>Этот способ имеет то преимущество, что позволяет скакать не только по файлам проекта, но и к стандартным библиотекам.</p>
+
+<p>Для удобной навигации по проекту воспользуемся ctags.</p>
+
+<p>Для этого устанавливаем пакет <a href="https://atom.io/packages/atom-ctags">Atom ctags</a> на замену штаному <em>symbols-view</em>.</p>
+
+<p>Ну и можно переопределить под себя клавиатурные сочетания:</p>
+
+<pre><code>'atom-text-editor':
+  'ctrl-]': 'atom-ctags:go-to-declaration'
+  'ctrl-t': 'atom-ctags:return-from-declaration'
+  'ctrl-f12':	'atom-ctags:toggle-file-symbols'
+  'ctrl-shift-f12':	'atom-ctags:toggle-project-symbols'
+  'ctrl-f11':	'atom-ctags:rebuild'
+</code></pre>
+
+<p>Для нормальной работы придётся периодически пересобирать <code>ctags</code> (Atom Ctags: Rebuild).</p>
+
+<p>В настройках <em>Atom ctags</em> желательно прописать исключения файлов, который не должны попадать в индекс.</p>
+
+<pre><code>--exclude=.* --exclude=*.json --exclude=*.yml
+</code></pre>
+
+<p><img src="https://ipfs.io/ipfs/QmRNiHPduVt83NYK95bnEJvDsTUywRGfFAqjeG6PmmhokC/ctags-cmd-args.png" alt="Atom ctags cmd args" /></p>
+
+<h2 id="новый-проект">Новый проект</h2>
+
+<p>Можно открыть <code>PlatformIO Home</code> и выбрать команду создания там.
+Можно в панели быстрого доступа <code>Ctrl+Shift+p</code> набрать <code>pio new proj</code> и вызвать диалог создания непосредственно.</p>
+
+<p>В диалоге выбираем платформы, под которые собирается проект (их может быть несколько) и каталог проекта.</p>
+
+<p><img src="https://ipfs.io/ipfs/QmXPUdYJUtAocGHp59Zf781MqW11URC55mS5Qshkk9yqs7/pio_new_proj.png" alt="PlatformIO New Project" /></p>
+
+<p>Я сейчас рассматриваю <code>NodeMcu</code>.</p>
+
+<p>Перед нами пустой проект. В каталог <code>src</code> складываем наши исходники, в каталог <code>lib</code> будут помещены сторонние библиотеки.</p>
+
+<p>Созданим в каталоге <code>src</code> файл <code>main.cpp</code> следующего содержания:</p>
+
+<pre><code class="language-cpp">#include &lt;Arduino.h&gt;
+
+#define LED_BUILTIN 16
+
+void setup()
+{
+  // initialize LED digital pin as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop()
+{
+  // turn the LED on (HIGH is the voltage level)
+  digitalWrite(LED_BUILTIN, HIGH);
+  // wait for a second
+  delay(1000);
+  // turn the LED off by making the voltage LOW
+  digitalWrite(LED_BUILTIN, LOW);
+   // wait for a 0.1 second
+  delay(100);
+}
+</code></pre>
+
+<p>Тот кто уже в теме без сомнения узнал обычную ардуиновскую мигалку.</p>
+
+<p>Что бы собрать проект воспользуемся быстрой кнопкой слева в виде галочки. Она самая верхняя.</p>
+
+<p><img src="https://ipfs.io/ipfs/QmTm9ig4B5gCBe8B6yHZAMTN7tCqydy7r8VKAiDqvD9Zox/build.png" alt="Build project" /></p>
+
+<p>Теоретически сборка должна запускаться комбинацией клавиш <code>Ctrl-Shift-B</code>, но у меня это не получилось. Видимо какой-то плагин перетянул на себя одеяло.</p>
+
+<p>В прочем, ничего не мешает забиндить свои комбинации на сборку и загрузку:</p>
+
+<pre><code>'atom-workspace, atom-text-editor':
+  'F5': 'platformio-ide:target:upload'
+  'F6': 'platformio-ide:target:build'
+</code></pre>
+
+<p>Для загрузки проекта в устройство можно воспользоваться быстрой кнопкой в виде стрелки, либо штатной комбинацией <code>Ctrl-Shift-U</code>.
+Да, можно и нашей новой клавишей <code>F5</code>.</p>
+
+<p><img src="https://ipfs.io/ipfs/QmTm9ig4B5gCBe8B6yHZAMTN7tCqydy7r8VKAiDqvD9Zox/upload.png" alt="Upload project" /></p>
+
+<p>Загрузка идёт достаточно медленно от того, что по умолчанию скорость загрузки <strong>115200</strong> бод.</p>
+
+<p>Что бы раскочегарить процесс, откроем файл <code>platformio.ini</code> и добавим
+в секцию <code>[env:nodemcuv2]</code> строчку <code>upload_speed = 460800</code>.
+А если железо позволяет, то даже <code>upload_speed = 921600</code>.
+Хотя в моём случае, повышение скорости порта наоборот увеличило время записи.</p>
+
+<p>Подробнее о настройках можно прочитать (в документации)[<a href="http://docs.platformio.org/en/stable/platforms/espressif8266.html">http://docs.platformio.org/en/stable/platforms/espressif8266.html</a>].</p>
+
+<h2 id="терминал">Терминал</h2>
+
+<p>PlatformIO IDE так же позволяет подключиться к последовательному порту, и взаимодействовать с вашей программой.</p>
+
+<p>Модифицируем файл <code>main.cpp</code> следующим образом:</p>
+
+<pre><code class="language-cpp">#include &lt;Arduino.h&gt;
+
+#define LED_BUILTIN 16
+
+void setup()
+{
+  pinMode(LED_BUILTIN, OUTPUT);
+  digitalWrite(LED_BUILTIN, HIGH);
+  Serial.begin(115200);
+  Serial.println(&quot;Hello ES8266!&quot;);
+}
+
+void loop()
+{
+  if (Serial.available() &gt; 0) {
+    String cmd = Serial.readStringUntil('\n');
+    cmd.trim();
+    if (cmd.equalsIgnoreCase(String(&quot;on&quot;))) {
+      digitalWrite(LED_BUILTIN, LOW);
+    } else if (cmd.equalsIgnoreCase(String(&quot;off&quot;))) {
+      digitalWrite(LED_BUILTIN, HIGH);
+    }
+    Serial.print(&quot;Command: &quot;);
+    Serial.println(cmd);
+  }
+}
+</code></pre>
+
+<p>Соберём и загрузим прошивку в устройство (<code>Ctrl-Shift-U</code>).</p>
+
+<p>Вызвать <strong>Serial Monitor</strong> можно либо из левой панели кнопок (кнопка с вилкой) либо комбинацией <code>Alt-Shift-M</code>.</p>
+
+<p><img src="https://ipfs.io/ipfs/QmP43tCfddGhmpJPMPjRNWENYVmiEWnotYd6f6fWTwjmBh/serial_monitor.png" alt="Serial monitor" /></p>
+
+<p>В появившемся диалоге выбираем порт, на котором висит устройство и скорость соединения (в нашем случае 115200 bod).</p>
+
+<p>После этого откроется монитор. Если нажать кнопку сброса, то увидим мусор (это инициализируется ESP8266) и затем приглашение <code>Hello ESP8266!</code>.</p>
+
+<p>Давая команды <code>on&lt;Enter&gt;</code> и <code>off&lt;Enter&gt;</code> можем включать и выключать светодиод.</p>
+
+<p>Кстати, <em>PlatformIO IDE</em> предоставляет удобную фичу. Нет нужды закрывать монитор
+перед загрузкой проект. Среда сама закроет монитор, загрузит проект, и откроет
+монитор повторно.</p>
+
+  
+<div class="prev-next-post pure-g">
+  <div class="pure-u-1-24" style="text-align: left;">
+    
+    <a href="http://myhw.ru/post/vscode-intro/"><i class="fa fa-chevron-left"></i></a>
+    
+  </div>
+  <div class="pure-u-10-24">
+    
+    <nav class="prev">
+      <a href="http://myhw.ru/post/vscode-intro/">VS Code</a>
+    </nav>
+    
+  </div>
+  <div class="pure-u-2-24">
+    &nbsp;
+  </div>
+  <div class="pure-u-10-24">
+    
+  </div>
+  <div class="pure-u-1-24" style="text-align: right;">
+    
+  </div>
+</div>
+
+
+
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+
+(function() {
+    
+    
+    if (window.location.hostname == "localhost")
+        return;
+
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    var disqus_shortname = 'myhw';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+</div>
+
+</div>
+</div>
+<script src="http://myhw.ru/js/ui.js"></script>
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-502829-16', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+</body>
+</html>
+
