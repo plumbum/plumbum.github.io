@@ -10,6 +10,249 @@
     <atom:link href="http://myhw.ru/tags/editor/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Atom&#43;PlatformIO</title>
+      <link>http://myhw.ru/post/atom&#43;platformio/</link>
+      <pubDate>Mon, 26 Dec 2016 22:28:30 +0300</pubDate>
+      
+      <guid>http://myhw.ru/post/atom&#43;platformio/</guid>
+      <description>&lt;p&gt;Среду разработки для Arduino сложно назвать полноценной средой разработки
+по соверменным меркам. Хотя она и содержит в своём составе средства
+для управления библиотеками и платформами используемый в ней редактор исходных
+кодов очень слаб, да и управление проектами по сути отсутствует.&lt;/p&gt;
+
+&lt;p&gt;На выручку нам приходит &lt;a href=&#34;http://platformio.org/&#34;&gt;PlatformIO&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;По сути это набор утилит командной строки позволяющих управлять проектами,
+библиотеками, сборкой и деплоем в готовые устройства.&lt;/p&gt;
+
+&lt;p&gt;Для удобной работы с исходным кодом среда может быть интегрирована в различные
+редакторы и IDE, а на базе редактора &lt;a href=&#34;https://atom.io/&#34;&gt;Atom&lt;/a&gt; создана
+собственная &lt;a href=&#34;http://platformio.org/platformio-ide&#34;&gt;IDE&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;На самом деле в &lt;em&gt;Atom&lt;/em&gt; среда интегрируется посредством пакета, так что
+тот же самый функционал можно получить не ставя &lt;em&gt;PlatformIO IDE&lt;/em&gt;, а установив
+нужный пакет в &lt;em&gt;Atom&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;На мой взгляд вариант с установкой пакета имеет то преимущество, что версии
+оригинального &lt;em&gt;Atom&lt;/em&gt; новее версий &lt;em&gt;Atom-а&lt;/em&gt; входящего в состав &lt;em&gt;PlatformIO IDE&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h2 id=&#34;atom&#34;&gt;Atom&lt;/h2&gt;
+
+&lt;p&gt;Ставим редактор &lt;a href=&#34;https://atom.io/&#34;&gt;Atom&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Тут никаких сложностей, просто качаем и устанавливаем пакет для своей системы.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ipfs.io/ipfs/QmagXg7Y11R1dPbtXby3W1tYSddkAudHKwfQ12rUqH6hSU/atom_welcome.png&#34; alt=&#34;Welcome atom&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;vim-mode&#34;&gt;Vim mode&lt;/h2&gt;
+
+&lt;p&gt;Для vim-еров ставим &lt;a href=&#34;https://atom.io/packages/vim-mode-plus&#34;&gt;Vim mode plus&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&amp;hellip;и дополнительно пакет для поддержки минимального набора ex (&lt;code&gt;:&lt;/code&gt;) команд &lt;a href=&#34;https://atom.io/packages/vim-mode-plus-ex-mode&#34;&gt;ex mode&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Не забудьте прописать keymap:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&#39;atom-text-editor.vim-mode-plus.normal-mode&#39;:
+  &#39;:&#39;: &#39;vim-mode-plus-ex-mode:open&#39;
+  &#39;!&#39;: &#39;vim-mode-plus-ex-mode:toggle-setting&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Пакет не реализует весь функционал оригинального &lt;em&gt;vim&lt;/em&gt;, но вполне достаточный,
+что-бы чувствовать себя комфортно.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ipfs.io/ipfs/QmagXg7Y11R1dPbtXby3W1tYSddkAudHKwfQ12rUqH6hSU/install_vim_mode.png&#34; alt=&#34;Install vim mode&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;оформление&#34;&gt;Оформление&lt;/h2&gt;
+
+&lt;p&gt;На мой взгляд тема &lt;em&gt;Atom-a&lt;/em&gt; резковата.&lt;/p&gt;
+
+&lt;p&gt;Мне нравится тема &lt;a href=&#34;https://atom.io/themes/lucius-dark-syntax&#34;&gt;Lucius dark&lt;/a&gt;,&lt;/p&gt;
+
+&lt;p&gt;И моноширный шрифт &lt;a href=&#34;http://input.fontbureau.com/&#34;&gt;Input&lt;/a&gt;.
+На сайте можно поиграться и собрать шрифт под себя.&lt;/p&gt;
+
+&lt;h2 id=&#34;platformio&#34;&gt;PlatformIO&lt;/h2&gt;
+
+&lt;p&gt;Ставим пакет &lt;a href=&#34;https://atom.io/packages/platformio-ide&#34;&gt;PlatformIO IDE&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ставим пакет терминала &lt;a href=&#34;https://atom.io/packages/platformio-ide-terminal&#34;&gt;PlatformIO IDE terminal&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;PlatformIO IDE предоставляет:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;поддержку большого количества плат, платформ и фреймворков.&lt;/li&gt;
+&lt;li&gt;Автозавершение кода.&lt;/li&gt;
+&lt;li&gt;Проверку кода на лету.&lt;/li&gt;
+&lt;li&gt;Управление библиотеками.&lt;/li&gt;
+&lt;li&gt;Работа с несколькими проектами.&lt;/li&gt;
+&lt;li&gt;Монитор последовательного порта.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;После перезапуска &lt;em&gt;Atom&lt;/em&gt; видим экран приглашения &lt;em&gt;PlatformIO&lt;/em&gt; с быстрым доступом
+к некоторым командам среды.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ipfs.io/ipfs/QmTm9ig4B5gCBe8B6yHZAMTN7tCqydy7r8VKAiDqvD9Zox/platformio_home.png&#34; alt=&#34;Home screen&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Его можно отключить сняв галку &lt;code&gt;Show PlatformIO Home screen&lt;/code&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;переход-к-определению-символа&#34;&gt;Переход к определению символа&lt;/h2&gt;
+
+&lt;p&gt;Тут не всё так гладко. Для автокомплита PlatformIO IDE использует пакет &lt;a href=&#34;https://atom.io/packages/autocomplete-clang&#34;&gt;autocomplete clang&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Он умеет кроме автокомплита переходить к определению символа, а вот возвращаться обратно не умеет (или я не нашел?)&lt;/p&gt;
+
+&lt;p&gt;Я переопределил переход на клавишу &lt;code&gt;F12&lt;/code&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&#39;.workspace&#39;:
+  &#39;f12&#39;: &#39;autocomplete-clang:go-declaration&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Этот способ имеет то преимущество, что позволяет скакать не только по файлам проекта, но и к стандартным библиотекам.&lt;/p&gt;
+
+&lt;p&gt;Для удобной навигации по проекту воспользуемся ctags.&lt;/p&gt;
+
+&lt;p&gt;Для этого устанавливаем пакет &lt;a href=&#34;https://atom.io/packages/atom-ctags&#34;&gt;Atom ctags&lt;/a&gt; на замену штаному &lt;em&gt;symbols-view&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ну и можно переопределить под себя клавиатурные сочетания:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&#39;atom-text-editor&#39;:
+  &#39;ctrl-]&#39;: &#39;atom-ctags:go-to-declaration&#39;
+  &#39;ctrl-t&#39;: &#39;atom-ctags:return-from-declaration&#39;
+  &#39;ctrl-f12&#39;:	&#39;atom-ctags:toggle-file-symbols&#39;
+  &#39;ctrl-shift-f12&#39;:	&#39;atom-ctags:toggle-project-symbols&#39;
+  &#39;ctrl-f11&#39;:	&#39;atom-ctags:rebuild&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Для нормальной работы придётся периодически пересобирать &lt;code&gt;ctags&lt;/code&gt; (Atom Ctags: Rebuild).&lt;/p&gt;
+
+&lt;p&gt;В настройках &lt;em&gt;Atom ctags&lt;/em&gt; желательно прописать исключения файлов, который не должны попадать в индекс.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;--exclude=.* --exclude=*.json --exclude=*.yml
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ipfs.io/ipfs/QmRNiHPduVt83NYK95bnEJvDsTUywRGfFAqjeG6PmmhokC/ctags-cmd-args.png&#34; alt=&#34;Atom ctags cmd args&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;новый-проект&#34;&gt;Новый проект&lt;/h2&gt;
+
+&lt;p&gt;Можно открыть &lt;code&gt;PlatformIO Home&lt;/code&gt; и выбрать команду создания там.
+Можно в панели быстрого доступа &lt;code&gt;Ctrl+Shift+p&lt;/code&gt; набрать &lt;code&gt;pio new proj&lt;/code&gt; и вызвать диалог создания непосредственно.&lt;/p&gt;
+
+&lt;p&gt;В диалоге выбираем платформы, под которые собирается проект (их может быть несколько) и каталог проекта.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ipfs.io/ipfs/QmXPUdYJUtAocGHp59Zf781MqW11URC55mS5Qshkk9yqs7/pio_new_proj.png&#34; alt=&#34;PlatformIO New Project&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Я сейчас рассматриваю &lt;code&gt;NodeMcu&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Перед нами пустой проект. В каталог &lt;code&gt;src&lt;/code&gt; складываем наши исходники, в каталог &lt;code&gt;lib&lt;/code&gt; будут помещены сторонние библиотеки.&lt;/p&gt;
+
+&lt;p&gt;Созданим в каталоге &lt;code&gt;src&lt;/code&gt; файл &lt;code&gt;main.cpp&lt;/code&gt; следующего содержания:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;#include &amp;lt;Arduino.h&amp;gt;
+
+#define LED_BUILTIN 16
+
+void setup()
+{
+  // initialize LED digital pin as an output.
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop()
+{
+  // turn the LED on (HIGH is the voltage level)
+  digitalWrite(LED_BUILTIN, HIGH);
+  // wait for a second
+  delay(1000);
+  // turn the LED off by making the voltage LOW
+  digitalWrite(LED_BUILTIN, LOW);
+   // wait for a 0.1 second
+  delay(100);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Тот кто уже в теме без сомнения узнал обычную ардуиновскую мигалку.&lt;/p&gt;
+
+&lt;p&gt;Что бы собрать проект воспользуемся быстрой кнопкой слева в виде галочки. Она самая верхняя.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ipfs.io/ipfs/QmTm9ig4B5gCBe8B6yHZAMTN7tCqydy7r8VKAiDqvD9Zox/build.png&#34; alt=&#34;Build project&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Теоретически сборка должна запускаться комбинацией клавиш &lt;code&gt;Ctrl-Shift-B&lt;/code&gt;, но у меня это не получилось. Видимо какой-то плагин перетянул на себя одеяло.&lt;/p&gt;
+
+&lt;p&gt;В прочем, ничего не мешает забиндить свои комбинации на сборку и загрузку:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&#39;atom-workspace, atom-text-editor&#39;:
+  &#39;F5&#39;: &#39;platformio-ide:target:upload&#39;
+  &#39;F6&#39;: &#39;platformio-ide:target:build&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Для загрузки проекта в устройство можно воспользоваться быстрой кнопкой в виде стрелки, либо штатной комбинацией &lt;code&gt;Ctrl-Shift-U&lt;/code&gt;.
+Да, можно и нашей новой клавишей &lt;code&gt;F5&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ipfs.io/ipfs/QmTm9ig4B5gCBe8B6yHZAMTN7tCqydy7r8VKAiDqvD9Zox/upload.png&#34; alt=&#34;Upload project&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Загрузка идёт достаточно медленно от того, что по умолчанию скорость загрузки &lt;strong&gt;115200&lt;/strong&gt; бод.&lt;/p&gt;
+
+&lt;p&gt;Что бы раскочегарить процесс, откроем файл &lt;code&gt;platformio.ini&lt;/code&gt; и добавим
+в секцию &lt;code&gt;[env:nodemcuv2]&lt;/code&gt; строчку &lt;code&gt;upload_speed = 460800&lt;/code&gt;.
+А если железо позволяет, то даже &lt;code&gt;upload_speed = 921600&lt;/code&gt;.
+Хотя в моём случае, повышение скорости порта наоборот увеличило время записи.&lt;/p&gt;
+
+&lt;p&gt;Подробнее о настройках можно прочитать (в документации)[&lt;a href=&#34;http://docs.platformio.org/en/stable/platforms/espressif8266.html&#34;&gt;http://docs.platformio.org/en/stable/platforms/espressif8266.html&lt;/a&gt;].&lt;/p&gt;
+
+&lt;h2 id=&#34;терминал&#34;&gt;Терминал&lt;/h2&gt;
+
+&lt;p&gt;PlatformIO IDE так же позволяет подключиться к последовательному порту, и взаимодействовать с вашей программой.&lt;/p&gt;
+
+&lt;p&gt;Модифицируем файл &lt;code&gt;main.cpp&lt;/code&gt; следующим образом:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-cpp&#34;&gt;#include &amp;lt;Arduino.h&amp;gt;
+
+#define LED_BUILTIN 16
+
+void setup()
+{
+  pinMode(LED_BUILTIN, OUTPUT);
+  digitalWrite(LED_BUILTIN, HIGH);
+  Serial.begin(115200);
+  Serial.println(&amp;quot;Hello ES8266!&amp;quot;);
+}
+
+void loop()
+{
+  if (Serial.available() &amp;gt; 0) {
+    String cmd = Serial.readStringUntil(&#39;\n&#39;);
+    cmd.trim();
+    if (cmd.equalsIgnoreCase(String(&amp;quot;on&amp;quot;))) {
+      digitalWrite(LED_BUILTIN, LOW);
+    } else if (cmd.equalsIgnoreCase(String(&amp;quot;off&amp;quot;))) {
+      digitalWrite(LED_BUILTIN, HIGH);
+    }
+    Serial.print(&amp;quot;Command: &amp;quot;);
+    Serial.println(cmd);
+  }
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Соберём и загрузим прошивку в устройство (&lt;code&gt;Ctrl-Shift-U&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;Вызвать &lt;strong&gt;Serial Monitor&lt;/strong&gt; можно либо из левой панели кнопок (кнопка с вилкой) либо комбинацией &lt;code&gt;Alt-Shift-M&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://ipfs.io/ipfs/QmP43tCfddGhmpJPMPjRNWENYVmiEWnotYd6f6fWTwjmBh/serial_monitor.png&#34; alt=&#34;Serial monitor&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;В появившемся диалоге выбираем порт, на котором висит устройство и скорость соединения (в нашем случае 115200 bod).&lt;/p&gt;
+
+&lt;p&gt;После этого откроется монитор. Если нажать кнопку сброса, то увидим мусор (это инициализируется ESP8266) и затем приглашение &lt;code&gt;Hello ESP8266!&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Давая команды &lt;code&gt;on&amp;lt;Enter&amp;gt;&lt;/code&gt; и &lt;code&gt;off&amp;lt;Enter&amp;gt;&lt;/code&gt; можем включать и выключать светодиод.&lt;/p&gt;
+
+&lt;p&gt;Кстати, &lt;em&gt;PlatformIO IDE&lt;/em&gt; предоставляет удобную фичу. Нет нужды закрывать монитор
+перед загрузкой проект. Среда сама закроет монитор, загрузит проект, и откроет
+монитор повторно.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>VS Code</title>
       <link>http://myhw.ru/post/vscode-intro/</link>
       <pubDate>Thu, 08 Dec 2016 11:32:36 +0300</pubDate>
