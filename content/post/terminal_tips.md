@@ -1,16 +1,48 @@
 +++
-date = "2016-09-16T12:15:00+03:00"
+date = "2017-01-03T10:50:00+03:00"
 title = "Консоль и терминал"
-description = ""
+description = "Небольшие советы по использованию"
 draft = false
-tags = ["Terminal", "Console", "Bash"]
+tags = ["Terminal", "Console", "Bash", "Date", "Time"]
 topics = ["Linux", "Tips"]
+created_at = "2016-09-16T12:15:00+03:00"
 
 +++
 
-Удобная работа в терминали Linux
+Удобная работа в терминале Linux.
 
 <!--more-->
+
+## Работа с датой
+
+Текущая дата в *unixtime*:
+```sh
+date +%s
+```
+
+Произвольна дата в *unixtime*:
+```sh
+date --date="2010-04-05 00:22:46" +%s
+```
+
+Ключик `--date` так же может принимать относительные даты:
+```sh
+date --date="friday"
+date --date="last friday"
+date --date="week"
+```
+
+С его же помощью можно "расшифровать" *unixtime*.
+```sh
+date --date='@2147483647'
+```
+
+Напечатать календарь в консоли можно с помощью команд:
+```sh
+cal
+ncal
+ncal -3
+```
 
 ## Клавиатурные сочетания
 
