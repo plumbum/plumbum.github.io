@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>My hardware</title>
-    <link>http://myhw.ru/topics/tips/index.xml</link>
+    <link>http://myhw.ru/tags/time/index.xml</link>
     <description>Recent content on My hardware</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ru</language>
     <copyright>&amp;copy; 2016. All rights reserved.</copyright>
-    <atom:link href="http://myhw.ru/topics/tips/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://myhw.ru/tags/time/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Консоль и терминал</title>
@@ -175,105 +175,6 @@ ncal -3
 &lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt; &lt;code&gt;Ctrl-&lt;/code&gt; = hold control, &lt;code&gt;meta-&lt;/code&gt; = hold meta (where meta is usually the &lt;strong&gt;alt&lt;/strong&gt; or &lt;strong&gt;escape&lt;/strong&gt; key).&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://habrahabr.ru/post/266933/&#34;&gt;источник&lt;/a&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Символы Unicode</title>
-      <link>http://myhw.ru/post/unicode_signs/</link>
-      <pubDate>Fri, 07 Oct 2016 14:07:45 +0300</pubDate>
-      
-      <guid>http://myhw.ru/post/unicode_signs/</guid>
-      <description>&lt;p&gt;Подборка некоторых полезных символов из юникода.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;Символ&lt;/th&gt;
-&lt;th&gt;Название&lt;/th&gt;
-&lt;th&gt;Код&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&amp;#x20BD;&lt;/td&gt;
-&lt;td&gt;Рубль. Знак валюты&lt;/td&gt;
-&lt;td&gt;U+20BD&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&amp;#x2713;&lt;/td&gt;
-&lt;td&gt;Check mark&lt;/td&gt;
-&lt;td&gt;U+2713&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&amp;#x2714;&lt;/td&gt;
-&lt;td&gt;Heavy check mark&lt;/td&gt;
-&lt;td&gt;U+2714&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&amp;#x2705;&lt;/td&gt;
-&lt;td&gt;White heavy check mark&lt;/td&gt;
-&lt;td&gt;U+2705&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&amp;#x237B;&lt;/td&gt;
-&lt;td&gt;Not check mark&lt;/td&gt;
-&lt;td&gt;U+237B&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&amp;#x2610;&lt;/td&gt;
-&lt;td&gt;Ballot box&lt;/td&gt;
-&lt;td&gt;U+2610&lt;/td&gt;
-&lt;/tr&gt;
-
-&lt;tr&gt;
-&lt;td&gt;&amp;#x2611;&lt;/td&gt;
-&lt;td&gt;Ballot box with check&lt;/td&gt;
-&lt;td&gt;U+2611&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-&lt;p&gt;Под X-сервером ввод символа с помощью его кода начинается комбинацией &lt;code&gt;Ctrl&lt;/code&gt;+&lt;code&gt;Shift&lt;/code&gt;+&lt;code&gt;U&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Вставить символ в HTML документ можно через апмперсанд последовательность.
-Например &amp;#x00A9; &lt;code&gt;&amp;amp;#x00A9;&lt;/code&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Настройка раскладок клавиатуры</title>
-      <link>http://myhw.ru/post/keyboard_layout/</link>
-      <pubDate>Tue, 14 Jun 2016 11:00:00 +0300</pubDate>
-      
-      <guid>http://myhw.ru/post/keyboard_layout/</guid>
-      <description>&lt;p&gt;Настройка раскладок клавиатуры в X11/Xorg&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;просмотр-текущих-опций&#34;&gt;Просмотр текущих опций&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;$ setxkbmap -query
-rules:      evdev
-model:      pc105
-layout:     us,ru
-variant:    ,
-options:    ctrl:nocaps,grp:alt_shift_toggle,grp_led:scroll
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;установка-новых-значений&#34;&gt;Установка новых значений&lt;/h2&gt;
-
-&lt;pre&gt;&lt;code&gt;$ setxkbmap -option -option &amp;quot;ctrl:nocaps,grp:alt_shift_toggle,grp_led:scroll&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Двойной &lt;code&gt;-option&lt;/code&gt; нужен, что бы стереть старые опции.
-Если указать только один &lt;code&gt;-option&lt;/code&gt;, то значения будут дописаны к существующим.&lt;/p&gt;</description>
     </item>
     
   </channel>

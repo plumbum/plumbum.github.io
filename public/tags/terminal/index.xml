@@ -12,12 +12,43 @@
     <item>
       <title>Консоль и терминал</title>
       <link>http://myhw.ru/post/terminal_tips/</link>
-      <pubDate>Fri, 16 Sep 2016 12:15:00 +0300</pubDate>
+      <pubDate>Tue, 03 Jan 2017 10:50:00 +0300</pubDate>
       
       <guid>http://myhw.ru/post/terminal_tips/</guid>
-      <description>&lt;p&gt;Удобная работа в терминали Linux&lt;/p&gt;
+      <description>&lt;p&gt;Удобная работа в терминале Linux.&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;работа-с-датой&#34;&gt;Работа с датой&lt;/h2&gt;
+
+&lt;p&gt;Текущая дата в &lt;em&gt;unixtime&lt;/em&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;date +%s
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Произвольна дата в &lt;em&gt;unixtime&lt;/em&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;date --date=&amp;quot;2010-04-05 00:22:46&amp;quot; +%s
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Ключик &lt;code&gt;--date&lt;/code&gt; так же может принимать относительные даты:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;date --date=&amp;quot;friday&amp;quot;
+date --date=&amp;quot;last friday&amp;quot;
+date --date=&amp;quot;week&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;С его же помощью можно &amp;ldquo;расшифровать&amp;rdquo; &lt;em&gt;unixtime&lt;/em&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;date --date=&#39;@2147483647&#39;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Напечатать календарь в консоли можно с помощью команд:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-sh&#34;&gt;cal
+ncal
+ncal -3
+&lt;/code&gt;&lt;/pre&gt;
 
 &lt;h2 id=&#34;клавиатурные-сочетания&#34;&gt;Клавиатурные сочетания&lt;/h2&gt;
 
